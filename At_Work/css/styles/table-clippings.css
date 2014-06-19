@@ -1,0 +1,166 @@
+/* VENDOR-TRANSFORM */
+/*Styling to change text input boxes*/
+
+
+
+
+/* ####################################### Shared Table styles */
+
+
+table.table-magazine td p,
+table.table-notepad td p,
+table.table-website td p {
+	margin-bottom: 1em !important;
+}
+
+table.table-magazine td img,
+table.table-notepad td img,
+table.table-website td img {
+	width: 100%;
+	height: auto;
+}
+
+table.table-magazine h2,
+table.table-magazine h3,
+table.table-magazine h4,
+table.table-magazine h5,
+table.table-magazine h6,
+table.table-notepad h2,
+table.table-notepad h3,
+table.table-notepad h4,
+table.table-notepad h5,
+table.table-notepad h6,
+table.table-website h2,
+table.table-website h3,
+table.table-website h4,
+table.table-website h5,
+table.table-website h6 {
+	color: #000;
+	padding-bottom: 12px;
+}
+
+table.table-magazine td table,
+table.table-notepad td table,
+table.table-website td table  {
+	background: none;
+}
+
+
+table.table-magazine td td,
+table.table-notepad td td,
+table.table-website td td {
+	padding: 10px;
+	border-bottom: 1px solid #bbb;
+	border-right: 0;
+	font-size: 1.2em;
+	}
+
+
+
+
+
+
+/* ####################################### Magzine & Newspaper styles */
+
+
+
+table.table-magazine {
+	border: 1px solid #333;
+    box-shadow: 2px 4px 6px 1px #545454;
+    font-family: Georgia, 'Times New Roman', Serif;
+    margin: 0 auto;
+}
+
+table.table-magazine td {
+	padding: 20px;
+	vertical-align: top;
+}
+
+table.table-magazine td:first-child {
+	border-right: 1px dotted #CCCCCC;
+}
+
+
+
+
+/* ####################################### notepad styles */
+
+
+div.table-notepad {
+	background: url("../images/table-notepad.jpg") no-repeat scroll left top / 101% auto #F6F6F6;
+    box-shadow: 3px 3px 2px 0 #bbb;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+}
+
+div.table-notepad table {
+	width: 90%;
+	margin: 10px auto;
+}
+
+div.table-notepad th {
+	border-bottom: 1px solid #ccc;
+    padding: 25px 10px 10px;
+    text-align: left;
+}
+
+div.table-notepad th,
+div.table-notepad table.table-default th {
+    background: none;
+    border-right: 0 none;
+    color: #333333;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+div.table-notepad td {
+	padding: 5px 10px;
+	background: none;
+	border-bottom: 1px solid #bbb;
+	border-right: 0;
+	font-size: 1.2em;
+	}
+
+div.table-notepad td table td {
+	background: #fff;
+	border-bottom: 1px solid #bbb;
+}
+
+
+
+
+
+/* ####################################### website styles */
+
+
+div.table-website {
+	background: url("../images/table-website.png") no-repeat scroll left top / 100% auto #f6f6f6;
+	border: 1px solid #CCCCCC;
+    border-collapse: separate;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px 0 #bbb;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding-top: 40px;
+}
+
+div.table-website table {
+	width: 95%;
+	margin: 10px auto;
+	background: #fff;
+}
+
+div.table-website table th {
+	border-bottom: 1px solid #ccc;
+    padding: 25px 25px 10px;
+    text-align: left;
+}
+
+div.table-website td th {
+    background: none;
+    border-right: 0 none;
+    color: #333333;
+    padding: 10px;
+}
+
+div.table-website td {padding: 25px 25px;}

@@ -1,0 +1,127 @@
+[
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.not-input-text",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(236,247,248,1)"
+      },
+      {
+        "key": "border-radius",
+        "value": "3px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 -1px 3px 0 rgba(0,0,0,0.4) inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "line-height",
+        "value": "18px"
+      },
+      {
+        "key": "display",
+        "value": "inline-block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.not-input-text:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(236,247,248,1)"
+      },
+      {
+        "key": "border-radius",
+        "value": "3px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 -1px 3px 0 rgba(0,0,0,0.4) inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "line-height",
+        "value": "18px"
+      },
+      {
+        "key": "display",
+        "value": "inline-block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction .ki24_view",
+    "properties": [
+      {
+        "key": "line-height",
+        "value": "23px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.modified",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#e3e3e3"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#f3f3f3 5%,#e3e3e3 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 5px"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.highlighted",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#e3e3e3"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#f3f3f3 5%,#e3e3e3 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 5px"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  }
+]
