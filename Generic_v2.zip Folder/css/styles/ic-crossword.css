@@ -1,0 +1,271 @@
+.interaction.ic-crossword .contentblock {
+  border-bottom: none;
+}
+
+.interaction.ic-crossword .crossword_view .cell-hilite {
+  background-color: #fae1ab;
+}
+
+.interaction.ic-crossword .crossword_view>table {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+.crossword_view .hint-ver {
+  background-image: url(../images/cw-hint-ver.png);
+}
+.crossword_view .hint-hor {
+  background-image: url(../images/cw-hint-hor.png);
+}
+
+/* Crossword */
+.crossword_view {
+  position: relative;
+}
+
+.crossword_view table {
+  position: relative;
+}
+
+.crossword_view .cell {
+  border: 1px solid #999999 !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.crossword_view input {
+  border: none !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  height: 23px;
+  width: 23px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.crossword_view input:hover {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0px 0px 2px 0 rgba(0, 110, 180, 1) inset;
+  -moz-box-shadow: 0px 0px 2px 0 rgba(0, 110, 180, 1) inset;
+  box-shadow: 0px 0px 2px 0 rgba(0, 110, 180, 1) inset;
+  -webkit-transition: all 0.5s;
+  border-bottom: solid 1px rgba(0, 110, 180, 1);
+}
+
+.crossword_view .clue-cell-enum {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 8px;
+  line-height: 8px;
+  font-weight: normal;
+  color: #008ac3;
+}
+
+.crossword_view .clue-enum {
+  color: #008ac3;
+  padding-right: 8px;
+  float: left;
+}
+
+.crossword_view .clue-paragraph {
+  margin: 5px 0;
+  padding-left: 25px;
+}
+.crossword_view .clue-paragraph img {
+  max-width: 150px;
+  max-height: 150px;
+}
+.crossword_view h2 {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 4px 0;
+}
+
+.crossword_view .clue-list {
+  position: absolute;
+  top: 0;
+}
+
+.crossword_view .clue-list-hor {
+  margin: 0 0 30px 20px;
+}
+
+.crossword_view .clue-list-ver {
+  margin: 0 0 0 20px;
+}
+
+.crossword_view .clue-list-hor p,.crossword_view .clue-list-ver p {
+  margin: 0 0 2px 0;
+}
+
+.crossword_view .hintLayer {
+  background-color: #EF8F39;
+  border: none;
+  margin: 0;
+}
+
+.interaction.package.ic-crossword .crossword_view .cell > .clue{
+  background-color: #fff;
+  color: #EF8F39;
+  padding: 4px;
+  position: absolute;
+  display: none;
+  z-index: 105;
+  box-shadow: 0 0 5px 0 #008ac3;
+  -webkit-box-shadow: 0 0 5px 0 #008ac3;
+  -moz-box-shadow: 0 0 5px 0 #008ac3;
+}
+
+.interaction.package.ic-crossword .crossword_view .cell:hover > .clue {
+  display: block;
+}
+
+.interaction.package.ic-crossword .crossword_view .cell.hint-hor > .clue {
+  top: 26px;
+  left: 0px;
+}
+.interaction.package.ic-crossword .crossword_view .cell.hint-ver > .clue {
+  left: 26px;
+  top: 0px;
+}
+
+.crossword_view .hint-text {
+  padding: 4px 8px;
+  color: #FFFFFF;
+}
+
+.crossword_view .hint-img {
+  padding: 4px 4px;
+}
+
+.crossword_view .grid {
+  z-index: 0;
+}
+
+.crossword_view .input-filled {
+  background-color: #fff;
+  color: #057faf;
+}
+
+.crossword_view .input-filled:disabled {
+  background-color: #eaf2f3;
+  color: #3b595e;
+  cursor: default;
+}
+
+.crossword_view .input-filled:disabled:hover {
+  box-shadow: none;
+}
+
+.crossword_view .clue-text {
+  z-index: 0;
+  padding-left: 20px;
+}
+
+.crossword_view .clue-text p {
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.crossword_view .clueEnum {
+  padding-right: 4px;
+}
+
+
+.interaction.package.ic-crossword .check {
+  position: absolute;
+  z-index: 104;
+}
+
+.interaction.package.ic-crossword .clues-inside .check.horizontal{
+  left: -30px;
+  top: -6px;
+}
+
+.interaction.package.ic-crossword .clues-inside .check.vertical{
+  top: -30px;
+  left: -6px;
+}
+
+.interaction.package.ic-crossword .clues-outside .check.horizontal{
+  left: -10px;
+  top: 5px;
+}
+
+.interaction.package.ic-crossword .clues-outside .check.vertical{
+  top: -10px;
+  left: 5px;
+}
+
+
+/* revisions to crossword */
+
+.interaction.ic-crossword .crossword_view .cell-hilite {
+  background-color: #dbf2fd;
+}
+
+.interaction.package.ic-crossword .cell.highlighted input{
+  background-color: #dbf2fd;
+}
+
+.interaction.package.ic-crossword .cell.highlighted input:disabled{
+  background-color: #eaf2f3;
+}
+
+.interaction.ic-crossword .crossword_view>table {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+
+/* added GR 13/8/2012 #87 */
+.interaction.ic-crossword .crossword_view .clue-enum {
+  width: 16px;
+  text-align: right;
+}
+
+.interaction.ic-crossword .crossword_view .clue-content {
+  margin-left: 24px;
+}
+
+.interaction.ic-crossword .crossword_view .clue-content img {
+  margin-bottom: 5px;
+}
+
+/* added look for status-corrected state */
+
+.interaction.package.ic-crossword.status-corrected:not(.status-input) .crossword_view input:hover {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom:solid 1px rgba(0,110,180,1);
+}
+
+.interaction.package.ic-crossword.status-corrected:not(.status-input) .crossword_view input:disabled {
+  background-color: #f5f5f5;
+  color: #666666;
+  cursor: default;
+}
+
+.interaction.package.ic-crossword.status-corrected:not(.status-input) .cell.highlighted input:disabled {
+  background-color: #cccccc;
+}
+
+.interaction.package.ic-crossword.status-corrected:not(.status-input) .crossword_view input:disabled:hover {
+  box-shadow:none;
+}

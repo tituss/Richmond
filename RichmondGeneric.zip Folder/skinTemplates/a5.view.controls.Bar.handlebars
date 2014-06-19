@@ -1,0 +1,41 @@
+
+<div id="page_controls">
+    <a data-event="previous" class="btn" href="#" title="Previous"></a>
+     <span class="pagination">
+       <ul>
+         <li><span class="current-page">2</span> of <span class="last-page">3</span></li>
+       </ul>
+     </span>
+     <a data-event="forward" class="btn" href="#" title="Next"></a>
+</div>
+
+
+<div id="micro_controls">
+    <a data-event="answers" class="btn" href="#" title="Click to show the correct answers.">Show answers</a>
+    <a data-event="retry" class="btn" href="#" title="Click to do the activity again.">Try again</a>
+    <a data-event="reset" class="btn" href="#" title="Click to clear your answers.">Reset</a>
+    <a data-event="reveal" class="btn" href="#" title="Click to see reveal object">Reveal</a>
+    <a data-event="save" class="btn" href="#" title="Click to save your answers.">Save</a>
+</div>
+
+<div id="macro_controls">
+    
+    {{#loOption "finishSubmitIsOn" }}
+  <a data-event="submit" class="btn" href="#" title="Click here when you have completed the activity.">
+    Finish
+  </a>
+{{else}}
+  <a data-event="submit" class="btn" href="#" title="Click to submit your answers to the markbook.">
+    Submit
+  </a>
+{{/loOption}}
+   
+    
+    
+    <a data-event="check" class="btn" href="#" title="Click to check your answers.">Check</a>
+</div>
+
+
+<div class="clear"></div>
+
+

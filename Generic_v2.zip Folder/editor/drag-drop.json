@@ -1,0 +1,412 @@
+[
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 1px #DCDCDC"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "padding",
+        "value": "0px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .pool .drag_element",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(225,225,225,1)"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)"
+      },
+      {
+        "key": "min-height",
+        "value": "auto"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#F9B134"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#F9B134 5%,#EF8827 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element.prefilled",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#fee4b7"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#fef3e0 5%,#fee4b7 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      },
+      {
+        "key": "display",
+        "value": "block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element .content",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none"
+      },
+      {
+        "key": "margin",
+        "value": "0"
+      },
+      {
+        "key": "padding",
+        "value": "0 6px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#fae0b3"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .pool .drag_element:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#F9B134"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#F9B134 5%,#EF8827 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#fff"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0 1px 0 rgba(0,0,0,.5)"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 1px rgba(240,136,38,1)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element:hover",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 1px rgba(0,0,0,0.8) inset,0 0 0 3px rgba(0,0,0,0.1)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element.prefilled:hover",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element:active",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#fae0b3"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 2px #bfe6c3"
+      },
+      {
+        "key": "color",
+        "value": "#ffffff"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element.dragged",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#fae0b3"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 2px #bfe6c3"
+      },
+      {
+        "key": "color",
+        "value": "#ffffff"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#f5f5f5"
+      },
+      {
+        "key": "padding",
+        "value": "12px"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool.ui-draggable",
+    "properties": [
+      {
+        "key": "z-index",
+        "value": "4"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool.ui-draggable h2",
+    "properties": [
+      {
+        "key": "font-size",
+        "value": "120%"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "cursor",
+        "value": "pointer"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool.ui-draggable .reset_position",
+    "properties": [
+      {
+        "key": "position",
+        "value": "absolute"
+      },
+      {
+        "key": "right",
+        "value": "12px"
+      },
+      {
+        "key": "text-transform",
+        "value": "capitalize"
+      },
+      {
+        "key": "border-radius",
+        "value": "3px"
+      },
+      {
+        "key": "padding",
+        "value": "2px 5px"
+      },
+      {
+        "key": "color",
+        "value": "#fff"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0px 1px 3px #0e2636"
+      },
+      {
+        "key": "background-image",
+        "value": "linear-gradient(top,#999999 0%,#777777 100%)"
+      },
+      {
+        "key": "background-image",
+        "value": "-o-linear-gradient(top,#999999 0%,#777777 100%)"
+      },
+      {
+        "key": "background-image",
+        "value": "-moz-linear-gradient(top,#999999 0%,#777777 100%)"
+      },
+      {
+        "key": "background-image",
+        "value": "-webkit-linear-gradient(top,#999999 0%,#777777 100%)"
+      },
+      {
+        "key": "background-image",
+        "value": "-ms-linear-gradient(top,#999999 0%,#777777 100%)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool.alignment_left .pool",
+    "properties": [
+      {
+        "key": "width",
+        "value": "25%"
+      },
+      {
+        "key": "float",
+        "value": "left"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool.alignment_right .pool",
+    "properties": [
+      {
+        "key": "width",
+        "value": "25%"
+      },
+      {
+        "key": "float",
+        "value": "right"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool.alignment_left .block",
+    "properties": [
+      {
+        "key": "width",
+        "value": "70%"
+      },
+      {
+        "key": "float",
+        "value": "right"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool.alignment_right .block",
+    "properties": [
+      {
+        "key": "width",
+        "value": "70%"
+      },
+      {
+        "key": "float",
+        "value": "left"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool .drag_holder",
+    "properties": [
+      {
+        "key": "border",
+        "value": "solid 0px white"
+      },
+      {
+        "key": "background-color",
+        "value": "rgba(230,230,230,1)"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 1px rgba(230,230,230,1)"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "min-height",
+        "value": "auto"
+      },
+      {
+        "key": "vertical-align",
+        "value": "top"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)"
+      },
+      {
+        "key": "cursor",
+        "value": "pointer"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element.is-active-target-source",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 4px #F9B134"
+      },
+      {
+        "key": "cursor",
+        "value": "url(../images/drop_indicator_cursor.png) 12 12,auto"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool:after",
+    "properties": [
+      {
+        "key": "visibility",
+        "value": "hidden"
+      },
+      {
+        "key": "display",
+        "value": "block"
+      },
+      {
+        "key": "content",
+        "value": "\"\""
+      },
+      {
+        "key": "clear",
+        "value": "both"
+      },
+      {
+        "key": "height",
+        "value": "0"
+      }
+    ]
+  }
+]

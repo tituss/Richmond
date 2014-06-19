@@ -1,0 +1,15 @@
+[
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area.is-active-target",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 6px rgba(249,177,52,0.5)"
+      },
+      {
+        "key": "cursor",
+        "value": "url(../images/drop_indicator_cursor.png) 12 12,auto"
+      }
+    ]
+  }
+]

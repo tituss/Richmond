@@ -1,0 +1,21 @@
+<div title="Score">
+  <p style="font-weight: bold">
+    Correct: {{correct}}/{{total}}
+  </p>
+
+  <p>
+    {{feedback}}
+  </p>
+
+  <div class="buttons">
+    {{#ifzero checked}}
+      <a href="#" data-button="tryAgain">Try again</a>
+    {{/ifzero}}
+
+    {{#if lastPage }}}
+      <a href="#" data-button="submit">Submit</a>
+    {{else}}
+      <a href="#" data-button="next">Next</a>
+    {{/if}}
+  </div>
+</div>

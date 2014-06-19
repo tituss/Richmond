@@ -1,0 +1,56 @@
+<DesignPack>
+  <name>Adult</name>
+  <templates>
+    <Template>
+      <name>default</name>
+      <zones>
+        <Zone>
+          <type>RUBRIC</type>
+          <top>16</top>
+          <left>20</left>
+          <width>676</width>
+          <height>21</height>
+        </Zone>
+        
+         <Zone>
+          <type>CONTENT</type>
+          <top>0</top>
+          <left>0</left>
+          <width>420</width>
+          <height>550</height>
+        </Zone>
+        
+          <Zone>
+          <type>MEDIA</type>
+          <top>0</top>
+          <left>0</left>
+          <width>300</width>
+          <height>550</height>
+        </Zone>
+        
+      </zones>
+    </Template>
+    
+    
+     <Template>
+      <name>Full width</name>
+      <zones>
+        <type>RUBRIC</type>
+          <top>16</top>
+          <left>20</left>
+          <width>676</width>
+          <height>21</height>
+        
+         <Zone>
+          <type>CONTENT</type>
+          <top>0</top>
+          <left>0</left>
+          <width>708</width>
+          <height>550</height>
+        </Zone>
+        
+      </zones>
+    </Template>
+    
+  </templates>
+</DesignPack>

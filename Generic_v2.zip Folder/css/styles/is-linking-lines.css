@@ -1,0 +1,224 @@
+/* seems to have no css in designpack yet, probably all in engine css. needs to be moved here */
+
+/* Added GR 2012-08-02 #124 */
+.is-linking-lines.delete-cursor .ll_view	{
+	cursor: url(../images/rubber-cursor-med.png) 19 18, auto;
+}
+
+.is-linking-lines.toolbar .toolbar .button.key-del, .is-linking-lines.toolbar .toolbar .button.key-del:hover {
+	padding-right: 28px;
+	background-image: url(../images/rubber-cursor-tiny.png);
+	background-repeat:no-repeat;
+	background-position: 42px;
+}
+
+.interaction.is-linking-lines.delete-cursor,
+.interaction.is-linking-lines.delete-cursor.toolbar .toolbar .button,
+.interaction.is-linking-lines.delete-cursor td.element {
+  cursor: url("../images/rubber-cursor-med.png") 7 19, pointer;
+}
+
+.is-linking-lines.toolbar .toolbar .button:last-child {
+  position: relative;
+  padding-left: 26px !important;
+}
+.is-linking-lines.toolbar .toolbar .button:last-child:after {
+  content: url("../images/rubber-cursor-tiny.png");
+  position: absolute;
+  left: 5px;
+}
+
+.is-linking-lines.interaction.toolbar .toolbar {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* feedback */
+.interaction.is-linking-lines .check {
+    position: absolute;
+    right: -6px;
+    top: -6px;
+}
+
+
+
+.interaction.is-linking-lines .contentblock .ll_view table {
+    background-color: transparent;
+    border-collapse: separate;
+    border-spacing: 8px;
+    position: absolute;
+    z-index: 3;
+}
+.interaction.is-linking-lines .contentblock .ll_view table th, .contentblock .ll_view table td {
+    border: 0 none;
+    vertical-align: middle;
+}
+.interaction.is-linking-lines td.element {
+    padding-right: 70px;
+    background-clip: content-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.interaction.is-linking-lines .ll_view table td.element:last-child {
+    padding-right: 0;
+}
+.interaction.is-linking-lines .ll_view table td.element > div {
+    border-radius: 5px 5px 5px 5px;
+    padding: 2px 3px;
+    width: auto;
+    background: #fff7bb;
+}
+.interaction.is-linking-lines .ll_view table td.element > div:hover {
+    background: #ffbb56;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view > .handle {
+    border: 0 solid #FFFFFF;
+    border-radius: 0 5px 5px 0;
+    box-shadow: none;
+    height: 100%;
+    width: 6px;
+    background: #ffbb56;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view > .handle.left_handle {
+    border-radius: 5px 0 0 5px;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view.left > .content {
+    padding-right: 11px;
+    padding-left: 5px;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view.center > .content {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view.right > .content {
+    padding-left: 11px;
+    padding-right: 5px;
+}
+
+.interaction.is-linking-lines .ll_view td:hover > .ll_element_view > .handle {
+    background-color: #fff7bb;
+    box-shadow: none;
+}
+.interaction.is-linking-lines .ll_view td .ll_element_view .handle.handle-hover {
+    background-color: transparent;
+}
+body.mouse_pressed .interaction.is-linking-lines:not(.delete-cursor),
+body.mouse_pressed .interaction.is-linking-lines:not(.delete-cursor) .ll_view,
+body.mouse_pressed .interaction.is-linking-lines:not(.delete-cursor) .ll_view td,
+body.mouse_pressed .interaction.is-linking-lines:not(.delete-cursor) .ll_view td .ll_element_view {
+    cursor: url("../images/icons/ll_cursor.png") 8 8, pointer;
+}
+
+body.mouse_pressed .interaction.is-linking-lines .ll_view td:hover > .ll_element_view > .handle {
+    background: transparent;
+    box-shadow: none;
+}
+body.mouse_pressed .interaction.is-linking-lines {
+    cursor: move;
+}
+
+/* added look for status-corrected state */
+
+.interaction.is-linking-lines.status-corrected:not(.status-input) .ll_view table td.element > div:hover {
+  background:#edf8fa;
+  cursor: default;
+}
+
+.is-linking-lines.toolbar.status-corrected:not(.status-input) .toolbar .button:hover,
+.is-linking-lines.toolbar.status-corrected:not(.status-input) .toolbar .button.activated:hover,
+.is-linking-lines.toolbar.status-corrected:not(.status-input) .toolbar .button.activated {
+  background:#f6f6f6;
+  background:-moz-linear-gradient(top,#fff 0,#f6f6f6 47%,#ededed 100%) repeat scroll 0 0 transparent;
+  background:-webkit-linear-gradient(top,#fff 0,#f6f6f6 47%,#ededed 100%) repeat scroll 0 0 transparent;
+  background:-o-linear-gradient(top,#fff 0,#f6f6f6 47%,#ededed 100%) repeat scroll 0 0 transparent;
+  background:-ms-linear-gradient(top,#fff 0,#f6f6f6 47%,#ededed 100%) repeat scroll 0 0 transparent;
+  background:linear-gradient(top,#fff 0,#f6f6f6 47%,#ededed 100%) repeat scroll 0 0 transparent;
+  box-shadow: none;
+  cursor: default;
+  color: #555555;
+  border: 1px solid #999999;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.is-linking-lines.delete-cursor.status-corrected:not(.status-input) .ll_view table,
+.is-linking-lines.delete-cursor.status-corrected:not(.status-input) .ll_view .ll_element_view {
+  cursor: default;
+}
+
+.is-linking-lines.status-corrected:not(.status-input) td.element {
+  cursor: default;
+}
+
+body.mouse_pressed .interaction.is-linking-lines.status-corrected:not(.status-input) .ll_view td:hover>.ll_element_view>.handle {
+  background:#9ddbf5;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  cursor: default;
+}
+
+body.mouse_pressed .interaction.is-linking-lines.status-corrected:not(.status-input):not(.delete-cursor),
+body.mouse_pressed .interaction.is-linking-lines.status-corrected:not(.status-input):not(.delete-cursor)
+.ll_view,body.mouse_pressed .interaction.is-linking-lines.status-corrected:not(.status-input):not(.delete-cursor)
+.ll_view td,body.mouse_pressed .interaction.is-linking-lines.status-corrected:not(.status-input):not(.delete-cursor) .ll_view td .ll_element_view {
+  cursor: default
+}
+
+.is-linking-lines .stroke-color {background: #ffbb56}
+.is-linking-lines .fill-color {background: #ffbb56}
+.is-linking-lines .correct-answer {background: #7abe00;}
+.is-linking-lines .wrong-answer {background: #bf0000;}
+
+/* prefill styles */
+.interaction.is-linking-lines .ll_view table td.element > div.prefill,
+.interaction.is-linking-lines .ll_view table td.element > div.prefill:hover {
+  background-color: #eaf2f3;
+  cursor: default;
+  color: #3B595E;
+}
+
+.interaction.is-linking-lines.delete-cursor .ll_view table td.element > div.prefill,
+.interaction.is-linking-lines.delete-cursor .ll_view table td.element > div.prefill:hover {
+  cursor: url("../images/rubber-cursor-med.png") 7 19, pointer;
+}
+
+.interaction.is-linking-lines .ll_view .ll_element_view.prefill > .handle,
+.interaction.is-linking-lines .ll_view td:hover > .ll_element_view.prefill > .handle,
+body.mouse_pressed .interaction.is-linking-lines .ll_view td:hover > .ll_element_view.prefill > .handle {
+  background-color: #74a7b0;
+}
+
+.is-linking-lines .prefill-answer {
+  background-color: #74a7b0;
+}
+
+/* custom style for audio in linking lines activities */
+.interaction.is-linking-lines .ll_view .ll_element_view > .content .playbutton {
+  background: url(../images/play.png);
+  width: 32px;
+  height: 26px;
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  vertical-align: bottom;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view > .content .playbutton:hover {
+  background-position: 0 -26px;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view > .content .playbutton.playing {
+  background-position: 0 -52px;
+}
+.interaction.is-linking-lines .ll_view .ll_element_view > .content .playbutton.playing:hover {
+  background-position: 0 -78px;
+}

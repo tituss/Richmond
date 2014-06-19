@@ -1,0 +1,42 @@
+<div title="Submitted">
+	<p>
+	Correct: {{correct}}  of {{total}}<br/>
+	Score: {{ percent }}%<br/>
+	</p>
+	
+  <p>
+    
+    {{#ifsingular attemptsLeft}}
+      Your first score has been submitted to the markbook.
+    {{/ifsingular}}
+    {{#ifplural attemptsLeft}}
+      Your first score has been submitted to the markbook.
+    {{/ifplural}}
+    {{#ifzero attemptsLeft}}
+      Your second score has been submitted to the markbook.
+    {{/ifzero}}
+  </p>
+  
+  <p>
+    
+    <!-- Attempt: {{attempts}}<br/>-->
+    
+    {{#ifsingular attemptsLeft}}
+      You have {{attemptsLeft}} attempt left.
+    {{/ifsingular}}
+    
+    {{#ifplural attemptsLeft}}
+      You have {{attemptsLeft}} attempts left.
+    {{/ifplural}}
+    
+    {{#ifzero attemptsLeft}}
+      You have 0 attempts left. <br />Use 'Try again' to keep practising.
+    {{/ifzero}}
+    
+    
+  </p>
+  
+  <div class="buttons">
+    <a href="#" data-button="close">Close</a>
+  </div>
+</div>

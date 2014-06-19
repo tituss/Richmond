@@ -1,0 +1,23 @@
+<div title="Submitted">
+  <p>
+    {{#ifsingular attemptsLeft}}
+      Submission has been successful. You have 1 attempt left. Please press Try again.
+    {{/ifsingular}}
+    {{#ifplural attemptsLeft}}
+      Submission has been successful. You have {{attemptsLeft}} attempts left. Please press Try again.
+    {{/ifplural}}
+    {{#ifzero attemptsLeft}}
+      Submission has been successful. You have no more attempts.
+    {{/ifzero}}
+  </p>
+  
+  <p>
+    Score: {{correct}}  of {{total}}<br/>
+    Attempt: {{attempts}}<br/>
+    Attempts remaining: {{attemptsLeft}}
+  </p>
+  
+  <div class="last-buttons">
+    <a href="#" data-button="close">Close</a>
+  </div>
+</div>

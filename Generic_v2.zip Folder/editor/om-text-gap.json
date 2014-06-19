@@ -1,0 +1,37 @@
+[
+  {
+    "selector": ".interaction.package-editable.om-text-gap .drag_holder a",
+    "properties": [
+      {
+        "key": "text-decoration",
+        "value": "none"
+      },
+      {
+        "key": "vertical-align",
+        "value": "top"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-text-gap .drag_holder .place_holder",
+    "properties": [
+      {
+        "key": "min-width",
+        "value": "1em"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-text-gap .gap_match_view .block .drop_area.is-active-target",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 2px rgba(250,224,179,1)"
+      },
+      {
+        "key": "border-radius",
+        "value": "4px"
+      }
+    ]
+  }
+]

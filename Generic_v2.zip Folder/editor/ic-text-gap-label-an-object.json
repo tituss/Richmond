@@ -1,0 +1,69 @@
+[
+  {
+    "selector": ".interaction.package-editable.ic-text-gap-label-an-object .wordpool.alignment_free .pool",
+    "properties": [
+      {
+        "key": "padding",
+        "value": "0 4px 4px 8px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap-label-an-object .wordpool.alignment_free .pool h2",
+    "properties": [
+      {
+        "key": "margin-bottom",
+        "value": "4px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap-label-an-object .tehs_view input[type\u003d\"text\"]",
+    "properties": [
+      {
+        "key": "background-color",
+        "value": "white"
+      },
+      {
+        "key": "border",
+        "value": "none"
+      },
+      {
+        "key": "margin",
+        "value": "0"
+      },
+      {
+        "key": "color",
+        "value": "#057faf"
+      },
+      {
+        "key": "font-size",
+        "value": "14px"
+      },
+      {
+        "key": "font-family",
+        "value": "Arial,sans-serif"
+      },
+      {
+        "key": "line-height",
+        "value": "21px"
+      },
+      {
+        "key": "height",
+        "value": "21px"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 1px rgba(0,0,0,1),1px 1px 1px 1px rgba(0,0,0,0.5)"
+      },
+      {
+        "key": "padding",
+        "value": "0 3px"
+      }
+    ]
+  }
+]

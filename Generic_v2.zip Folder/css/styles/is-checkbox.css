@@ -1,0 +1,9 @@
+.interaction.is-checkbox .choice_interaction .input-checkbox.input-checkbox-checked {
+  background: #fee4b7;
+  background: linear-gradient(center top, #fef3e0 5%, #fee4b7 100%);
+  box-shadow: 0 0 5px 0 #000 inset;
+}
+.interaction.is-checkbox .choice_interaction .input-checkbox {
+  border: 2px solid #fff;
+  cursor: pointer;
+}

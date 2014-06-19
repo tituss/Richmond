@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>preview width+height in px</comment>
+<entry key="preview_width">1000</entry>
+<entry key="preview_height">700</entry>
+</properties>

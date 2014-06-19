@@ -1,0 +1,213 @@
+[
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.not-input-text",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgb(234,246,247)"
+      },
+      {
+        "key": "border-radius",
+        "value": "3px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 -1px 3px 0 rgba(0,0,0,0.4) inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "line-height",
+        "value": "18px"
+      },
+      {
+        "key": "display",
+        "value": "inline-block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.not-input-text:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgb(234,246,247)"
+      },
+      {
+        "key": "border-radius",
+        "value": "3px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 -1px 3px 0 rgba(0,0,0,0.4) inset"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "line-height",
+        "value": "18px"
+      },
+      {
+        "key": "display",
+        "value": "inline-block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction .ki24_view",
+    "properties": [
+      {
+        "key": "line-height",
+        "value": "23px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.wrong",
+    "properties": [
+      {
+        "key": "text-decoration",
+        "value": "underline"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.modified",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none repeat scroll 0 0 #f9b134"
+      },
+      {
+        "key": "border-radius",
+        "value": "4px"
+      },
+      {
+        "key": "-webkit-box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "color",
+        "value": "#555"
+      },
+      {
+        "key": "margin",
+        "value": "0 2px"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "cursor",
+        "value": "default"
+      },
+      {
+        "key": "line-height",
+        "value": "16px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.highlighted",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none repeat scroll 0 0 #f9b134"
+      },
+      {
+        "key": "border-radius",
+        "value": "4px"
+      },
+      {
+        "key": "-webkit-box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "color",
+        "value": "#555"
+      },
+      {
+        "key": "margin",
+        "value": "0 2px"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "cursor",
+        "value": "default"
+      },
+      {
+        "key": "line-height",
+        "value": "16px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-correction span.prefilled",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none repeat scroll 0 0 #f9b134"
+      },
+      {
+        "key": "border-radius",
+        "value": "4px"
+      },
+      {
+        "key": "-webkit-box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 1px #ef8827"
+      },
+      {
+        "key": "color",
+        "value": "#555"
+      },
+      {
+        "key": "margin",
+        "value": "0 2px"
+      },
+      {
+        "key": "padding",
+        "value": "2px 3px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "cursor",
+        "value": "default"
+      },
+      {
+        "key": "line-height",
+        "value": "16px"
+      }
+    ]
+  }
+]

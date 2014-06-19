@@ -1,0 +1,39 @@
+/* seems to have no css in designpack yet, probably all in engine css. needs to be moved here */
+
+/* Added GR 2012-08-02 #124 */
+.is-linking-lines.delete-cursor .ll_view	{
+	cursor: url(../images/rubber-cursor-med.png) 19 18, auto;
+}
+
+.is-linking-lines.toolbar .toolbar .button.key-del, .is-linking-lines.toolbar .toolbar .button.key-del:hover {
+	padding-right: 28px;
+	background-image: url(../images/rubber-cursor-tiny.png);
+	background-repeat:no-repeat;
+	background-position: 42px; 
+}
+
+
+
+.is-linking-lines .correct-answer {background-color: #7abe00 !important;}
+.is-linking-lines .wrong-answer {background-color: #bf0000 !important;}
+.is-linking-lines .stroke-color {background-color: #cccccc !important;}
+.is-linking-lines .fill-color {background-color: #636363 !important;}
+
+
+
+.interaction.is-linking-lines .ll_view > canvas {top: 1px !important;}
+
+.interaction.is-linking-lines .ll_view .ll_element_view > .handle {top: 3px;}
+
+.is-linking-lines .check.wrong, 
+.is-linking-lines .check.correct, 
+.is-linking-lines .check.wrong_2 {top: 2px;}
+
+
+.interaction.is-linking-lines .ll_view .ll_element_view>.handle {
+	right: -10px !important;
+}
+
+
+
+.is-linking-lines table td {padding: 0 30px 0 0;}

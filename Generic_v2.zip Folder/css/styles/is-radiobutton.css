@@ -1,0 +1,36 @@
+/* TODO dirty hack, please remove the following line */
+/* div#media-1-0 { height: auto !important; margin-bottom: 10px; } */
+
+div.input-radio-hover {background-color:#a9d9ae !important;}
+
+.choice_interaction .input-radio,
+.choice_interaction .input-checkbox {
+  border-radius: 10px 10px 10px 10px;
+  color: #333333;
+  cursor: default;
+  display: block;
+  float: left;
+  line-height: 18px;
+  margin: 0 6px 2px 0;
+  min-height: 0;
+  padding: 4px 10px 3px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.interaction.is-radiobutton .choice_interaction .input-radio.input-radio-checked {
+  background: #fee4b7;
+  background: linear-gradient(center top, #fef3e0 5%, #fee4b7 100%);
+  box-shadow: 0 0 5px 0 #000 inset;
+}
+.interaction.is-radiobutton .choice_interaction .input-radio {
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.interaction.is-radiobutton .choice_interaction.algn-hor .input-radio {
+  display: inline-block;
+  float: none !important;
+}

@@ -1,0 +1,249 @@
+/* width of audio player */
+
+.audio_media {
+  width: 235px;
+}
+
+.v_a_media {
+  margin: 0;
+}
+
+/* */
+
+.audio_wrapper3 .audio_header,
+.video_wrapper .video_header {
+  display:none;
+}
+
+.audio_wrapper3 .video_footer,  
+.video_wrapper .video_footer {
+  background: rgb(210,210,210);
+  background: url("images/icons/player-bg.jpg") repeat-x scroll 0 0 rgb(210,210,210);
+  height: 32px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 2px 0 rgb(102,102,102) inset;
+}
+
+.video_footer .progress_area {
+  background: black;
+  height: 6px;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.video_footer .progress_downloaded {
+  background-color: rgb(150,150,150);
+  background-image: none;
+  height: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3) inset;
+  border-top: 1px solid rgb(200,200,200);
+}
+
+.video_footer .progress_played {
+  background-color: rgb(77, 178, 220);
+  height: 4px;
+  box-shadow: -4px 0 0 0 rgb(255,255,255) inset;
+  top: 1px;
+}
+
+.video_footer .progress_played:after,
+.video_footer .progress_area:hover .progress_played:after {
+  display:none;
+}
+
+/* VIDEO FOOTER */
+
+.video_footer > div:not(.progress_area) {
+  height: 20px;
+  float: left;
+  margin-top: 3px;
+  background: transparent;
+}
+
+/* ======= PLAY PAUSE ===========*/
+.video_footer .play_wrap {
+  margin: 2px 2px 0 8px;
+}
+
+.video_footer .play_wrap a {
+  height: 17px;
+  width: 20px;
+  margin: 1px 0 0 0;
+}
+
+.play_wrap a:hover {
+  background-position: 0 -17px;
+}
+
+.play_wrap a:active {
+  background-position: 0 -34px;
+}
+
+.video_footer .play  {
+  background: url("../images/icons/play-icons2.png") no-repeat 0 0;
+}
+
+.video_footer .pause  {
+  background: url("../images/icons/pause-icons2.png") no-repeat 0 0;
+}
+
+/* ======= VOLUME ===========*/
+.video_footer .volume {
+  margin: 0;
+}
+
+.video_footer .volume .mute_button  {
+  height:20px;
+  width:50px;
+  background: url("../images/icons/audio-mute-icons.png") no-repeat scroll 0 1px transparent;
+}
+
+.video_footer .volume .volume_button  {
+    background: url("../images/icons/audio-vol-icons.png") no-repeat scroll 0 1px transparent;
+}
+
+.video_footer .mute_button:hover {
+  background-position: 0 -19px;
+}
+.video_footer .mute_button:active {
+  background-position: 0 -39px;
+}
+
+#content-wrap .audio_wrapper3 ul.mute_button,
+#content-wrap .video_wrapper ul.mute_button  {
+  padding: 0 2px 0 0;
+}
+
+.video_footer .mute_button > li {
+  background: rgb(150,150,150);
+  display: block;
+  float: right;
+  height: 11px;
+  width: 3px;
+  margin: 4px 0 6px 0;
+  border-right: 2px solid rgb(200,200,200);
+}
+
+.video_footer .volume_button > li:hover, 
+.video_footer .mute_button > li:hover {
+  height:15px;
+  margin-top: 0;
+  background-color: rgb(77,178,220);
+}
+
+.video_footer .volume_button > li.volume-bar-active, 
+.video_footer .mute_button > li.volume-bar-active{
+  background-color: rgb(50,50,50);
+}
+
+/* ======= TIMER ===========*/
+.video_footer .timer {
+  background: transparent;
+  position: static;
+  margin: 2px 15px 0 0;
+  font-size: 11px;
+  line-height: 20px;
+  color: rgb(50,50,50);
+  /*text-shadow: 1px 1px rgb(51,51,51);*/
+  box-shadow:none;
+  padding: 0;
+}
+
+.video_footer .timer:after, 
+.video_footer .timer:before {
+  display: none;
+}
+
+.content-wrap .video_footer .video_extras, 
+.is-media-zone .video_footer .video_extras {
+  border: none;
+  border-radius: 0;
+  float: right;
+  width: auto;
+  margin: 2px 0 0 0;
+}
+
+.content-wrap .video_footer .button_holder, 
+.is-media-zone .video_footer .button_holder {
+  float:right;
+  margin-right: 8px;
+  line-height: 20px;
+}
+
+.content-wrap .video_footer .button_holder p.extras_button, 
+.is-media-zone .video_footer .button_holder p.extras_button {
+  background: transparent;
+  border: none;
+  margin: 0 0 0 4px;
+  padding:0;
+  width: 20px;
+  display: inline-block;
+  height:20px;
+  line-height: 20px;
+}
+
+.content-wrap .video_footer .button_holder p.transcript_button, 
+.is-media-zone .video_footer .button_holder p.transcript_button {
+  color: transparent;
+  background: url("../images/icons/transcript-trans.png") no-repeat scroll top center transparent;
+}
+
+.content-wrap .video_footer .button_holder p.subtitles_button, 
+.is-media-zone .video_footer .button_holder p.subtitles_button {
+  color: transparent;
+  background: url("../images/icons/player_subtitles_trans.png") no-repeat scroll top center transparent;
+}
+
+.content-wrap .video_footer .button_holder p.subtitles_button.inactive, 
+.is-media-zone .video_footer .button_holder p.subtitles_button.inactive {
+  background-position: 0 -48px;
+}
+
+.content-wrap .video_footer .size_wrap, 
+.is-media-zone .video_footer .size_wrap {
+  float: right;
+  height: 18px;
+  margin: 4px 6px 0 0;
+}
+
+.video_footer .size_wrap .full_screen {
+  height: 18px;
+  width: 17px;
+  background: url("../images/icons/full-screen.png") no-repeat scroll top center transparent;
+}
+.video_footer .size_wrap .full_screen:hover {
+  background-position: 0 center;
+}
+.video_footer .size_wrap .full_screen:active {
+  background-position: 0 bottom;
+}
+
+/* Added CB 2012-08-03 #7 */
+.content-wrap .video_footer .button_holder .transcript_button:hover, 
+.is-media-zone .video_footer .button_holder .transcript_button:hover,
+.content-wrap .video_footer .button_holder .subtitles_button:hover, 
+.is-media-zone .video_footer .button_holder .subtitles_button:hover {
+  background-position: 0 -24px;
+}
+
+/* Added CB 2012-08-03 #7 */
+.content-wrap .video_footer .button_holder .transcript_button:active, 
+.is-media-zone .video_footer .button_holder .transcript_button:active,
+.content-wrap .video_footer .button_holder .subtitles_button:active, 
+.is-media-zone .video_footer .button_holder .subtitles_button:active {
+  background-position: 0 -48px;
+}
+
+/* Added CB 2012-08-03 #7 */
+.video_footer .progress_area,
+.video_footer .play,
+.video_footer .pause,
+.video_footer .mute_button,
+.video_footer .full_screen,
+.video_footer .transcript_button {
+  cursor: pointer;
+}
+
+.mwEmbedPlayer {
+  border: 1px solid black;
+}

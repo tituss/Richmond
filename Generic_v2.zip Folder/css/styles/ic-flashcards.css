@@ -1,0 +1,178 @@
+/* FlashCards */
+/*.fc_view .card { float: left; margin: 5px; cursor: pointer;  background: #000; text-align: center; width: 180px; height: 135px;}
+.fc_view .card div { display: none; }
+.fc_view .card .active { display: block; }
+.fc_view .front, .fc_view .back { background: #eee; }
+*/
+
+.package.interaction.pp-flashcards .fc_view:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.fc_view .card div { display: none; }
+.fc_view .card .active { display: block; }
+
+.fc_view .panel {
+    float: left;
+    margin: 10px;
+    position: relative;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.fc_view .square {
+  width: 150px;
+  height: 150px;
+}
+.fc_view .landscape {
+  width: 196px;
+  height: 140px;
+}
+.fc_view .portrait {
+  width: 140px;
+  height: 196px;
+}
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.fc_view .panel .front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    -webkit-transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+}
+
+.fc_view .panel img{
+    width:100%;
+}
+.fc_view .panel table{
+    width:100%;
+    height:100%;
+}
+.contentblock.fc_view .front table { background-color: white; }
+.fc_view .panel td{vertical-align:middle}
+.fc_view .panel {
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    text-shadow: 0 1px 0 white;
+    padding:0;
+    font-size: 1.3em;
+}
+
+.fc_view .panel .back {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: 100%;
+    height: 100%;
+    background: #DBF0F8;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.fc_view .panel .back, .fc_view .panel .front{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:5px solid #fff;
+    overflow:hidden;
+}
+
+
+/* -- X axis rotation for click panel -- */
+.fc_view .click .front {
+    cursor: pointer;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+body.isIE .fc_view .click .front {display:block;}
+.fc_view .click.flip .front ,.fc_view .click.paired .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+body.isIE .fc_view .click.flip .front ,body.isIE .fc_view .click.paired .front {display:none;}
+.fc_view .click .back {
+    cursor: pointer;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+body.isIE .fc_view .click .back {display:none;}
+.fc_view .click.flip .back, .fc_view .click.paired .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+body.isIE .fc_view .click.flip .back, body.isIE .fc_view .click.paired .back{display:block;}
+
+.fc_view .panel .front:hover, .fc_view .panel .back:hover {
+    -moz-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    box-shadow: 0 0 7px rgba(0,0,0,0.75);
+}
+.fc_view .panel.paired .back, .fc_view .panel.paired .front{
+    border:5px solid #cce3bb;
+    background:#dceecf;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0);
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+    cursor:default;
+}
+
+.fc_view .panel.notpaired .back{
+    border:5px solid #c90202;
+}
+.fc_view td { padding:0; text-align: center; text-shadow: 0 1px 0 white; }
+
+

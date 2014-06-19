@@ -1,0 +1,197 @@
+/* VENDOR-TRANSFORM */
+
+.isIE9 .interaction.package.om-pairs .match_view .block { /* ie9 won't show shadows for the drag_holder otherwise */
+  border-collapse: separate;
+}
+
+
+/* pairAlignment ontop */ 
+
+.isIE9 .interaction.package.om-pairs .match_view.align_ontop .block .drop_area{ /* ie9 will only show shadow with half the size otherwise */
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.35);
+}
+ 
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  /* Added MLG 2012-07-20 #48 */
+  margin: 0 4px 10px 6px;
+  
+}
+
+/* Added MLG 2012-07-25 #48 */
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area.is-active-target {
+  box-shadow: 0 0 0 6px rgba(77, 160, 24, 0.5);
+}
+
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area .content.text {
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #444444;
+  font-weight: bold;
+  padding: 2px 4px;
+  text-align: center;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+/* pairAlignment is vertical */
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area > .content {
+  color: #444444;
+  font-weight: bold;
+  background-color: white;
+  text-shadow: 0 1px 0 #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);  
+}
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag > .content {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag{
+  background-color: rgba(77, 160, 24, 0.25);
+  border-radius: 5px;
+}
+  
+  
+/* pairAlignment is horizontal */
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area > .content {
+  color: #444444;
+  font-weight: bold;
+  background-color: white;
+  text-shadow: 0 1px 0 #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);  
+}
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag > .content {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag{
+  background-color: rgba(77, 160, 24, 0.25);
+  border-radius: 5px;
+}
+
+
+
+.interaction.om-pairs .wordpool {
+  background: #fafafa;
+  border-radius: 5px 5px 5px 5px;
+  padding: 12px;
+}
+    
+   
+.interaction.om-pairs .drop_zone {
+
+  margin-left: 0 !important; 
+  margin-bottom:0; 
+  float: none;
+  position: relative;
+
+}
+
+
+.interaction.om-pairs .drop_zone h1 {font-size: 1.3em !important; display: inline;}   
+
+
+.interaction.om-pairs .drop_zone .drag_item {
+  display: inline-block;
+  margin-left: 5px; 
+  margin-bottom: 0;
+  font-size:1.3em;
+  border: solid 0px white;
+  background-color: rgba(230,230,230,1);
+  box-shadow: 0 0 0 1px rgba(230,230,230,1);
+  border-radius: 5px;
+  min-height: auto !important;
+  background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100% );
+  cursor: pointer;
+}
+
+
+/* Interaction Drop Zone target view OnTop */
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone {
+	float: left;
+	display: inline-block;
+	min-width: 100px;
+	min-height: 50px;
+	/*border: 1px solid rgba(0, 0, 0, 0.1);*/
+	background: #fafafa;
+	margin: 0 10px 10px 0;
+	border-radius: 6px;
+	box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone.hovered,
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone.has_drag_item {
+	background: #e3e3e3;
+}
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone h1 {
+	display: block;
+	text-align: center;
+	background: #e3e3e3;
+	border-bottom: 1px solid #e4e4e4;
+	/*
+	background-color: rgba(230,230,230,1);
+	background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(241, 241, 241, 1) 50%, rgba(225, 225, 225, 1) 51%, rgba(246, 246, 246, 1) 100% );
+	*/
+	box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	padding: 2px 15px;
+}
+
+
+
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone .drag_item {
+	display: block;
+	text-align: center;
+	margin: 0;
+}
+
+
+
+.interaction.om-pairs .ui-state-disabled,
+.interaction.om-pairs .wordpool .drop_item_zone.ui-droppable {
+	background: #e3e3e3;
+	border-radius: 5px;
+} 
+
+
+/* Interaction Drop Zone target view horizontal */
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone {
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #e3e3e3;
+	clear: left;
+	border-radius: 8px;
+	margin: 0 0 5px 0;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone h1 {
+	box-shadow: inset 1px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 4px 12px;
+	border-radius: 5px 0px 0px 5px;
+	background: #fff;
+	/*margin-right: 2px;*/
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone.has_drag_item {
+	background: #f3f3f3;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone.has_drag_item .drag_item {
+	border-radius: 0 5px 5px 0;
+	padding: 0 10px;
+}
+
+ 
+.interaction.drag-drop .wordpool .pool .drop_area {vertical-align: top;}
+
+.interaction.drag-drop.om-pairs .match_view .block .drop_area {float: none !important;}

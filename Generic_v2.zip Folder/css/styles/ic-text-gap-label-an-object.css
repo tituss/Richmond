@@ -1,0 +1,93 @@
+/* Input:Completion:Label an object */
+
+.interaction.ic-text-gap-label-an-object .tehs_block .wordpool .block{
+  position: relative;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_block .wordpool .pool {
+  padding: 4px;
+}
+
+.interaction.package-editable.ic-text-gap-label-an-object .wordpool.alignment_free .pool {
+  padding: 0 4px 4px 8px;
+}
+
+.interaction.package-editable.ic-text-gap-label-an-object .wordpool.alignment_free .pool h2 {
+  margin-bottom: 4px;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_block .wordpool .pool .static_word{
+  display: inline-block;
+  margin: 2px 6px;
+  padding: 1px 3px;
+}
+
+/* added GR 17/8/2012 #131 */
+.interaction.ic-text-gap-label-an-object .tehs_view{
+  position: absolute;
+  background-color: none;
+  border:none;
+}
+
+.interaction.package-editable.ic-text-gap-label-an-object .tehs_view input[type="text"]{
+  background-color: white;
+  border: none;
+  margin: 0;
+  color:#057faf;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 21px;
+  height: 21px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,1), 1px 1px 1px 1px rgba(0,0,0,0.5);
+  padding:0 3px;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_view.prefilled input[type="text"]{
+  color: #74a7b0;
+  cursor: default;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_view.prefilled input[type="text"]:hover{
+  box-shadow: 0 0 0 1px #000000, 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_view input[type="text"]:hover{
+  outline:none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  -webkit-transition:all 0.5s;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_view input[type="text"]:focus{
+  outline:none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  -moz-box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  box-shadow:0 0 0 1px rgba(0,0,0,1), 0px 0px 0 3px rgba(0,0,0,0.5);
+  -webkit-transition:all 0.5s;
+}
+
+.interaction.ic-text-gap-label-an-object .tehs_view .check{
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}
+
+/* added look for status-corrected state */
+
+.interaction.ic-text-gap-label-an-object.status-corrected:not(.status-input) .tehs_view input[type="text"]:hover {
+  box-shadow: 0 0 0 1px rgba(0,0,0,1),1px 1px 1px 1px rgba(0,0,0,0.5);
+} 
+
+/* added margin for enum-answers */
+
+.interaction.ic-text-gap-label-an-object .enum-answers {
+  margin-right: 4px;
+}

@@ -1,0 +1,305 @@
+[
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 1px #DCDCDC"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "padding",
+        "value": "0px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .pool .drag_element",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(225,225,225,1)"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%)"
+      },
+      {
+        "key": "min-height",
+        "value": "auto"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .pool .drag_element:hover",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 1px #DCDCDC"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag-dragged .drag_element",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "1px 1px 4px 1px rgba(73,73,73,0.25)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#f9f9f9"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#f9f9f9 5%,#dcdcdc 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element.prefilled",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#e3e3e3"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#f3f3f3 5%,#e3e3e3 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      },
+      {
+        "key": "display",
+        "value": "block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element .content",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none"
+      },
+      {
+        "key": "margin",
+        "value": "0"
+      },
+      {
+        "key": "padding",
+        "value": "0 6px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#e3e3e3"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(center top,#e3e3e3 5%,#dcdcdc 100%)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .pool .drag_element:hover",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(225,225,225,1)"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(245,245,245,1) 0%,rgba(225,225,225,1) 51%,rgba(241,241,214,1) 50%,rgba(255,255,255,1) 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0 1px 1px rgba(0,0,0,.1)"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 1px #838383"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element:hover",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 1px rgba(0,0,0,0.8) inset,0 0 0 3px rgba(0,0,0,0.1)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .block .drag_element.prefilled:hover",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 3px 0 #000000 inset"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element:active",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(225,225,225,1)"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(246,246,246,1) 0%,rgba(225,225,225,1) 51%,rgba(241,241,214,1) 50%,rgba(255,255,255,1) 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element.dragged",
+    "properties": [
+      {
+        "key": "background",
+        "value": "rgba(225,225,225,1)"
+      },
+      {
+        "key": "background",
+        "value": "linear-gradient(top,rgba(246,246,246,1) 0%,rgba(225,225,225,1) 51%,rgba(241,241,214,1) 50%,rgba(255,255,255,1) 100%)"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element:active",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 0px 2px #dcdcdc"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element.dragged",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "1px 1px 4px 1px rgba(73,73,73,0.25)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#f9f9f9"
+      },
+      {
+        "key": "padding",
+        "value": "12px"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool .drag_holder",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#e3e3e3"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "border",
+        "value": "0"
+      },
+      {
+        "key": "font-size",
+        "value": "1.3em"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .drag_element.is-active-target-source",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 4px #838383"
+      },
+      {
+        "key": "cursor",
+        "value": "url(../images/drop_indicator_cursor.png) 12 12,auto"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.drag-drop .wordpool .pool:after",
+    "properties": [
+      {
+        "key": "visibility",
+        "value": "hidden"
+      },
+      {
+        "key": "display",
+        "value": "block"
+      },
+      {
+        "key": "content",
+        "value": "\"\""
+      },
+      {
+        "key": "clear",
+        "value": "both"
+      },
+      {
+        "key": "height",
+        "value": "0"
+      }
+    ]
+  }
+]

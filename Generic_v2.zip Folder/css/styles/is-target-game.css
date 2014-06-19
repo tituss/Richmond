@@ -1,0 +1,364 @@
+
+/* TGM */
+@-webkit-keyframes fadeOutDownBig {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+
+    40% {
+        opacity:0;
+        -webkit-transform: translateY(400px);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(1000px);
+    }
+}
+
+@-moz-keyframes fadeOutDownBig {
+    0% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+
+    40% {
+        opacity:0;
+        -moz-transform: translateY(400px);
+    }
+    100% {
+        opacity: 0;
+        -moz-transform: translateY(1000px);
+    }
+}
+
+@-ms-keyframes fadeOutDownBig {
+    0% {
+        opacity: 1;
+        -ms-transform: translateY(0);
+    }
+
+    40% {
+        opacity:0;
+        -ms-transform: translateY(400px);
+    }
+    100% {
+        opacity: 0;
+        -ms-transform: translateY(1000px);
+    }
+}
+
+@-o-keyframes fadeOutDownBig {
+    0% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+
+    40% {
+        opacity:0;
+        -o-transform: translateY(400px);
+    }
+    100% {
+        opacity: 0;
+        -o-transform: translateY(1000px);
+    }
+}
+
+@keyframes fadeOutDownBig {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    40% {
+        opacity:0;
+        transform: translateY(400px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(1000px);
+    }
+}
+
+.tgm .fadeOutDownBig {
+    -webkit-animation-name: fadeOutDownBig;
+    -moz-animation-name: fadeOutDownBig;
+    -ms-animation-name: fadeOutDownBig;
+    -o-animation-name: fadeOutDownBig;
+    animation-name: fadeOutDownBig;
+}
+@-webkit-keyframes tada {
+    0% {-webkit-transform: scale(1);}   
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+    100% {-webkit-transform: scale(1) rotate(0);}
+}
+
+@-moz-keyframes tada {
+    0% {-moz-transform: scale(1);}  
+    10%, 20% {-moz-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-moz-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-moz-transform: scale(1.1) rotate(-3deg);}
+    100% {-moz-transform: scale(1) rotate(0);}
+}
+
+@-ms-keyframes tada {
+    0% {-ms-transform: scale(1);}   
+    10%, 20% {-ms-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-ms-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-ms-transform: scale(1.1) rotate(-3deg);}
+    100% {-ms-transform: scale(1) rotate(0);}
+}
+
+@-o-keyframes tada {
+    0% {-o-transform: scale(1);}    
+    10%, 20% {-o-transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {-o-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-o-transform: scale(1.1) rotate(-3deg);}
+    100% {-o-transform: scale(1) rotate(0);}
+}
+
+@keyframes tada {
+    0% {transform: scale(1);}   
+    10%, 20% {transform: scale(0.9) rotate(-3deg);}
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+    100% {transform: scale(1) rotate(0);}
+}
+
+.tgm .tada {
+    -webkit-animation-name: tada;
+    -moz-animation-name: tada;
+    -ms-animation-name: tada;
+    -o-animation-name: tada;
+    animation-name: tada;
+}
+.tgm .panel {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+        -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.tgm .panel:nth-child(4n-3){
+    margin-left:0;
+}
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.tgm .panel .front {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    background: #DBF0F8;
+    text-align: center;
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    
+    -webkit-transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(0deg);
+    -moz-backface-visibility: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+
+.tgm .panel img{
+    width:100%;
+}
+.tgm .panel table{
+    width:100%;
+    height:100%;
+}
+.tgm .panel td{vertical-align:middle}
+.tgm .panel p{
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    text-shadow: 0 1px 0 white;
+    padding:0;
+}
+
+.tgm .panel .back {
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    background: #DBF0F8;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.tgm .panel .back, .panel .front{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:5px solid #fff;
+    overflow:hidden;
+}
+
+
+/* -- X axis rotation for click panel -- */
+.tgm .flap {
+ -webkit-animation-name: flap;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 1s;
+    -webkit-transform-style: preserve-3d;
+
+-moz-animation-name: flap;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-duration: 1s;
+    -moz-transform-style: preserve-3d;
+
+-o-animation-name: flap;
+    -o-animation-timing-function: linear;
+    -o-animation-iteration-count: 1;
+    -o-animation-duration: 1s;
+    -o-transform-style: preserve-3d;
+
+-ms-animation-name: flap;
+    -ms-animation-timing-function: linear;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-duration: 1s;
+    -ms-transform-style: preserve-3d;
+
+animation-name: flap;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    transform-style: preserve-3d;
+
+}
+
+@-webkit-keyframes flap {
+  0%   {-webkit-transform: rotateY(0deg); }  
+  42% {-webkit-transform: rotateY(175deg); }
+  58% {-webkit-transform: rotateY(185deg); }
+100% {-webkit-transform: rotateY(360deg); }  
+}
+
+@-moz-keyframes flap {
+  0%   {-moz-transform: rotateY(0deg);}  
+100% {-moz-transform: rotateY(360deg);}  
+}
+
+@-o-keyframes flap {
+  0%   {-o-transform: rotateY(0deg);}  
+100% {-o-transform: rotateY(360deg);}  
+}
+
+@-ms-keyframes flap {
+  0%   {-ms-transform: rotateY(0deg);}  
+100% {-ms-transform: rotateY(360deg);}  
+}
+
+@keyframes flap {
+  0%   {transform: rotateY(0deg);}  
+100% {transform: rotateY(360deg);}  
+}
+
+.tgm .panel .front:hover, .panel .back:hover {
+    -moz-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    box-shadow: 0 0 7px rgba(0,0,0,0.75);
+}
+.tgm .panel.paired .back, .panel.paired .front{
+    border:5px solid #cce3bb;
+    background:#dceecf;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0);
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+    cursor:default;
+}
+
+.tgm .panel.notpaired .back{
+    border:5px solid #c90202;
+}
+
+.tgm .panel.clicked_incorrect .back, .panel.clicked_incorrect .front{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:5px solid #c90202;
+    overflow:hidden;
+}
+
+.tgm .panel.clicked_correct .back, .panel.clicked_correct .front{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:5px solid #cce3bb;
+    background:#dceecf;
+    overflow:hidden;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0);
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+}
+
+
+.tgm .panel .back{
+    background: url(../../images/pelmanism_square_2x_design_1.png) no-repeat center center;
+}
+
+.tgm .panel.clicked_incorrect .back{
+    background: url(../../images/target_incorrect.png) no-repeat center center;
+    background-size:contain;
+}
+
+.tgm .panel.clicked_incorrect .front{
+    background:#eecfcf;
+}
+
+.tgm, .tgm .panel.clicked_incorrect{
+    cursor: url(../../images/target_cursor_grey.png) 20 20, auto;
+}
+
+.tgm .panel, .tgm .flap {
+    cursor: url(../../images/target_cursor_blue.png) 20 20, auto;
+}
+
+/* TGM END */

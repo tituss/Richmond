@@ -1,0 +1,102 @@
+/* VENDOR-TRANSFORM */
+
+/* Added MLG 2012-07-26 #32 */
+.interaction.package-editable.os-sorting .match_dds_view .block .multi_drop_area.is-active-target,
+.drop_indicator .interaction.package-editable.os-sorting .ddm_wordpool_view .drag_item.ui-draggable-dragging,
+.drop_indicator .interaction.package-editable.os-sorting .ddm_target_view .drag_item.ui-draggable-dragging {
+  box-shadow: 0 0 0 6px rgba(240,136,38,1);
+  border-radius: 4px;
+  cursor:url(../images/drop_indicator_cursor.png) 12 12,auto;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table {
+  display: inline-block;
+  border-collapse: separate;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  margin: 3px 10px 0px 0;
+}
+
+body.isIE9 .interaction.package-editable.os-sorting .match_dds_view .contentblock table {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.35);
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table th {
+  border: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #F0F0F0;
+  border-bottom: solid 1px #DDDDDD;
+  color: #444444;
+  font-weight: bold;
+  margin: -4px -4px 8px;
+  padding: 2px 4px;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock table td {
+  border: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 4px;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .contentblock .multi_drop_area.target_target .drag_element {
+  margin: 0px 0px 8px 0px;
+}
+
+.interaction.package-editable.os-sorting .match_dds_view .wordpool .source_target {
+  vertical-align: top;
+}
+
+
+.interaction.os-sorting .drop_zone {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  float: left;
+  margin: 0 10px 10px 0 !important;
+  padding: 0;
+  width: 142px;
+  min-height: 140px;
+}
+
+.interaction.os-sorting .drop_zone h1 {
+  background: #F5F5F5;
+  font-size: 1.4em !important; 
+  display: block;
+  margin: 0;
+  padding: 5px 7px;
+  width: auto;
+  }
+
+/*
+.interaction.os-sorting .drop_zone .drag_item {
+  font-size: 12px;
+  padding: 5px 7px;
+}
+*/
+
+
+.interaction.os-sorting .wordpool .drop_item_zone {
+   float: left;
+  margin: 0 8px 8px 0;
+  max-width: 200px;
+  min-height: 21px;
+  min-width: 100px;
+  padding: 0;
+  }
+
+.interaction.os-sorting .wordpool .drag_item,
+.interaction.os-sorting .drop_zone .drag_item {
+  padding: 1px !important;
+  background: rgba(225,225,225,1);
+  background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 0 1px #DCDCDC;
+  padding: 0;
+  margin-bottom: 0 !important;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}

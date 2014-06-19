@@ -1,0 +1,17 @@
+/* VENDOR-TRANSFORM */
+
+.interaction.package.om-text-gap-label-an-object .graphic_gap_match_view .gap_match_gap_view .drag_holder .drag_element{
+  margin-top: 0px;
+}
+
+
+.interaction.package.om-text-gap-label-an-object .wordpool .block .drag_holder{
+  background:#fff;
+  border-radius: 4px;
+  border:none;
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .5), 0px 1px 0px 0px rgba(255,255,255,1);
+  min-height: auto !important;
+}
+.interaction.package.om-text-gap-label-an-object .drag_holder .place_holder {
+  min-width: 1em;
+}

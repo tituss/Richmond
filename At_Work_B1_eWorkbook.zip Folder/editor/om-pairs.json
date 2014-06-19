@@ -1,0 +1,167 @@
+[
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none repeat scroll 0 0 #FFFFFF"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px 5px 5px 5px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "1px 1px 5px 0 rgba(0,0,0,0.35)"
+      },
+      {
+        "key": "margin",
+        "value": "0 4px 10px 6px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area.is-active-target",
+    "properties": [
+      {
+        "key": "box-shadow",
+        "value": "0 0 0 6px rgba(77,160,24,0.5)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area .content.text",
+    "properties": [
+      {
+        "key": "border-radius",
+        "value": "5px 5px 0 0"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 -1px 1px 0 rgba(0,0,0,0.2)"
+      },
+      {
+        "key": "color",
+        "value": "#444444"
+      },
+      {
+        "key": "font-weight",
+        "value": "bold"
+      },
+      {
+        "key": "padding",
+        "value": "2px 4px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0 1px 0 #FFFFFF"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area\u003e.content",
+    "properties": [
+      {
+        "key": "color",
+        "value": "#444444"
+      },
+      {
+        "key": "font-weight",
+        "value": "bold"
+      },
+      {
+        "key": "background-color",
+        "value": "white"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0 1px 0 #FFFFFF"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "1px 1px 5px 0 rgba(0,0,0,0.35)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag\u003e.content",
+    "properties": [
+      {
+        "key": "border-radius",
+        "value": "5px 5px 0px 0px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_vertical .block .drop_area.has_drag",
+    "properties": [
+      {
+        "key": "background-color",
+        "value": "rgba(77,160,24,0.25)"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area\u003e.content",
+    "properties": [
+      {
+        "key": "color",
+        "value": "#444444"
+      },
+      {
+        "key": "font-weight",
+        "value": "bold"
+      },
+      {
+        "key": "background-color",
+        "value": "white"
+      },
+      {
+        "key": "text-shadow",
+        "value": "0 1px 0 #FFFFFF"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "1px 1px 5px 0 rgba(0,0,0,0.35)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag\u003e.content",
+    "properties": [
+      {
+        "key": "border-radius",
+        "value": "5px 0px 0px 5px"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.om-pairs .match_view.align_horizontal .block .drop_area.has_drag",
+    "properties": [
+      {
+        "key": "background-color",
+        "value": "rgba(77,160,24,0.25)"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px"
+      }
+    ]
+  }
+]

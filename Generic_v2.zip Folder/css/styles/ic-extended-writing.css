@@ -1,0 +1,143 @@
+/* writing */
+
+.writing_view ol, .writing_view ul{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.writing_view .fw_nav a span{
+  width: 94px;
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.writing_view li{
+  display: block;
+}
+/*sets font styles*/
+.writing_view .fw_nav{
+  width: 125px;
+  font: 12px/16px Arial, sans-serif;
+  color: #555;
+}
+
+/*adds space inside li elements so hover states of <a> tags don't touch edges and adds divider under menu items*/
+.writing_view .fw_nav li{
+  border-bottom: 1px solid #eee;
+  padding: 5px 0;
+  display: block;
+}
+
+/*removes divider from underneath last menu item*/
+.writing_view .fw_nav ul>li:last-child{
+  border-bottom: none;
+}
+
+/*adds padding into the hover state*/
+.writing_view .fw_nav li a{
+  padding: 2px 6px;
+  display: block;
+  cursor: pointer;
+}
+
+/*hover state*/
+.writing_view .fw_nav li a:hover{
+  background: #eee;
+}
+
+/*active state*/
+.writing_view .fw_nav li a:active{
+  background: #ccc;
+}
+
+/*applies styling to currently active button. Positioned relatively to allow placement of triangle (added with jQuery)*/
+.writing_view .fw_nav li a.fw_nav_selected, .writing_view .fw_nav li a.fw_nav_selected:hover, .writing_view .fw_nav li a.fw_nav_selected:active{
+  position: relative;
+  color: #fff;
+  text-shadow: 0 -1px 0 #333;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: rgb(48,114,185);
+  background: -moz-linear-gradient(top, rgba(48,114,185,1) 0%, rgba(50,108,180,1) 15%, rgba(46,98,174,1) 37%, rgba(35,81,161,1) 70%, rgba(32,65,151,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,114,185,1)), color-stop(15%,rgba(50,108,180,1)), color-stop(37%,rgba(46,98,174,1)), color-stop(70%,rgba(35,81,161,1)), color-stop(100%,rgba(32,65,151,1)));
+  background: -webkit-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: -o-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: -ms-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+}
+
+/* -------------- *
+.writing_view .fw_nav li a{
+  padding-right: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+/*hover state*/
+.writing_view .fw_nav li a:hover{
+  background: #eee;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+/*active state*/
+#fww_nav li a:active{
+  background: #ccc;
+}
+
+/*applies styling to currently active button. Positioned relatively to allow placement of triangle (added with jQuery)*/
+.writing_view .fw_nav li a.fw_nav_selected{
+  color: #fff;
+  text-shadow: 0 -1px 0 #333;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #3072b9 url(../images/x_alt_12x12.png) no-repeat 108px 3px;
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, -moz-linear-gradient(top, rgba(48,114,185,1) 0%, rgba(50,108,180,1) 15%, rgba(46,98,174,1) 37%, rgba(35,81,161,1) 70%, rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,114,185,1)), color-stop(15%,rgba(50,108,180,1)), color-stop(37%,rgba(46,98,174,1)), color-stop(70%,rgba(35,81,161,1)), color-stop(100%,rgba(32,65,151,1)));
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, -webkit-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, -o-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, -ms-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12.png) no-repeat 108px 3px, linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+}
+
+/*stops cross from appearing on show all as you can't unclick show all*/
+.writing_view .fw_nav .fww_showall a.fw_nav_selected{
+  background: #3072b9;
+  background: -moz-linear-gradient(top, rgba(48,114,185,1) 0%, rgba(50,108,180,1) 15%, rgba(46,98,174,1) 37%, rgba(35,81,161,1) 70%, rgba(32,65,151,1) 100%);
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,114,185,1)), color-stop(15%,rgba(50,108,180,1)), color-stop(37%,rgba(46,98,174,1)), color-stop(70%,rgba(35,81,161,1)), color-stop(100%,rgba(32,65,151,1)));
+  background: -webkit-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: -o-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: -ms-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background:linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+}
+
+/*hover state switches image for cross*/
+.writing_view .fw_nav li a.fw_nav_selected:hover{
+  background: #3072b9 url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px;
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, -moz-linear-gradient(top, rgba(48,114,185,1) 0%, rgba(50,108,180,1) 15%, rgba(46,98,174,1) 37%, rgba(35,81,161,1) 70%, rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(48,114,185,1)), color-stop(15%,rgba(50,108,180,1)), color-stop(37%,rgba(46,98,174,1)), color-stop(70%,rgba(35,81,161,1)), color-stop(100%,rgba(32,65,151,1)));
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, -webkit-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, -o-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, -ms-linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  background: url(../images/x_alt_12x12_hover.png) no-repeat 108px 3px, linear-gradient(top, rgba(48,114,185,1) 0%,rgba(50,108,180,1) 15%,rgba(46,98,174,1) 37%,rgba(35,81,161,1) 70%,rgba(32,65,151,1) 100%);
+  -webkit-box-shadow:0px 1px 2px 0px rgba(51,51,51,1);
+  -moz-box-shadow:0px 1px 2px 0px rgba(51,51,51,1);
+  box-shadow:0px 1px 2px 0px rgba(51,51,51,1);
+}
+
+/*stops hover state on show all as it can't be clicked when active*/
+.writing_view .fw_nav .fww_showall a.fw_nav_selected:hover{
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
+}
+
+/*adds inner shadow when clicking a currently selected item*/
+.writing_view .fw_nav li a.fw_nav_selected:active{
+  -webkit-box-shadow:inset 0px 1px 2px 0px rgba(51,51,51,1);
+  -moz-box-shadow:inset 0px 1px 2px 0px rgba(51,51,51,1);
+  box-shadow:inset 0px 1px 2px 0px rgba(51,51,51,1);
+}
+

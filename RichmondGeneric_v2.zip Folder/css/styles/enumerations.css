@@ -1,0 +1,46 @@
+
+
+.interaction.package .contentblock {
+  position: relative;
+  /*padding-left: 0 !important;*/
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 5px;
+  clear: both;
+  /*overflow: auto;*/
+	
+	/* will be overwritten by enum javascript in js/enumerations.js
+	if enum is enabled will be the gap between enum and content area,
+	if no enum will be padding-left of content area */
+}
+
+.interaction.package .contentblock > .enum{
+  color:#000;
+  position: relative;
+  display: block;
+  top: 0px;
+  text-align: right;
+  padding-right: 8px;
+  font-size: 1.3em; 
+  float: left;
+  margin-left: -18px;
+  margin-right: 0;
+  font-weight: bold; 
+}
+
+.interaction.package .contentblock .enum-answers {
+  color: #ed145b;
+  float: left;
+  margin-right: 5px;
+}
+
+.interaction.package.package-editable .contentblock {
+	
+}
+
+.interaction.package.package-editable .contentblock:after {
+  content:'.';
+  clear: both;
+  display: block;
+  height: 0px;
+  text-indent: -999999em;
+}

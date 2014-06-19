@@ -1,0 +1,181 @@
+[
+  {
+    "selector": ".interaction.package-editable.ic-text-gap.wordpool .wordpool.titled .pool",
+    "properties": [
+      {
+        "key": "border-radius",
+        "value": "5px 5px 5px 5px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0 0 5px 0 rgba(0,0,0,0.7)"
+      },
+      {
+        "key": "font-size",
+        "value": "14px"
+      },
+      {
+        "key": "margin",
+        "value": "5px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap.wordpool .wordpool.titled.alignment_vertical .pool .static_word",
+    "properties": [
+      {
+        "key": "border-bottom",
+        "value": "1px solid #EEEEED"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      },
+      {
+        "key": "display",
+        "value": "block"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap.wordpool .wordpool.titled .pool .static_word:last-child",
+    "properties": [
+      {
+        "key": "border-bottom",
+        "value": "0px none"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap.wordpool .wordpool.titled .pool h1",
+    "properties": [
+      {
+        "key": "background",
+        "value": "none repeat scroll 0 0 #333333"
+      },
+      {
+        "key": "border-radius",
+        "value": "5px 5px 0 0"
+      },
+      {
+        "key": "color",
+        "value": "#FFFFFF"
+      },
+      {
+        "key": "padding",
+        "value": "5px 8px"
+      },
+      {
+        "key": "font-size",
+        "value": "14px"
+      },
+      {
+        "key": "text-align",
+        "value": "center"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap .input-text input:not([type\u003dsubmit]):not([type\u003dfile])",
+    "properties": [
+      {
+        "key": "background",
+        "value": "#fff"
+      },
+      {
+        "key": "border",
+        "value": "none"
+      },
+      {
+        "key": "border-bottom",
+        "value": "dotted 1px #999"
+      },
+      {
+        "key": "padding",
+        "value": "2px 2px 0 2px"
+      },
+      {
+        "key": "margin",
+        "value": "0 1px"
+      },
+      {
+        "key": "font-size",
+        "value": "13px"
+      },
+      {
+        "key": "color",
+        "value": "#000"
+      },
+      {
+        "key": "-webkit-transition",
+        "value": "all .5s"
+      },
+      {
+        "key": "-moz-transition",
+        "value": "all .5s"
+      },
+      {
+        "key": "-o-transition",
+        "value": "all .5s"
+      },
+      {
+        "key": "-ms-transition",
+        "value": "all .5s"
+      },
+      {
+        "key": "transition",
+        "value": "all .5s"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap .input-text input:not([type\u003dsubmit]):not([type\u003dfile]):hover",
+    "properties": [
+      {
+        "key": "border-radius",
+        "value": "4px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 3px 1px #7a7a7a"
+      },
+      {
+        "key": "-webkit-transition",
+        "value": "all 0.5s"
+      },
+      {
+        "key": "border-bottom",
+        "value": "solid 0px rgba(0,110,180,1)"
+      }
+    ]
+  },
+  {
+    "selector": ".interaction.package-editable.ic-text-gap .input-text input:not([type\u003dsubmit]):not([type\u003dfile]):focus",
+    "properties": [
+      {
+        "key": "outline",
+        "value": "none"
+      },
+      {
+        "key": "border-radius",
+        "value": "4px"
+      },
+      {
+        "key": "box-shadow",
+        "value": "0px 0px 3px 1px #7a7a7a"
+      },
+      {
+        "key": "border-bottom",
+        "value": "solid 0px rgba(0,110,180,1)"
+      },
+      {
+        "key": "-webkit-transition",
+        "value": "all 0.5s"
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+/* VENDOR-TRANSFORM */
+
+
+.interaction.package-editable.ic-text-correction span.not-input-text, .interaction.package-editable.ic-text-correction span.not-input-text:hover {
+  background: rgb(234,246,247);
+  border-radius: 3px;
+  box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.4) inset;
+  padding: 2px 3px;
+  line-height: 18px;
+  display: inline-block;
+}
+
+.interaction.package-editable.ic-text-correction .ki24_view {
+  line-height: 23px;
+}
+
+.interaction.package-editable.ic-text-correction span.wrong {
+  text-decoration: underline;
+}
+
+.interaction.package-editable.ic-text-correction span.modified,
+.interaction.package-editable.ic-text-correction span.highlighted,
+.interaction.package-editable.ic-text-correction span.prefilled {
+  background: none repeat scroll 0 0 #f9b134;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 1px #ef8827;
+  box-shadow: 0 0 0 1px #ef8827;
+  color: #555;
+  margin: 0 2px;
+  padding: 2px 3px;
+  text-align: center;
+  cursor: default;
+  line-height: 16px;
+}
+
+/* added GR 2/8/2012 #112 #123*/
+.ki24_input input.kitext {
+  width: 90%;
+  border-radius:4px;
+  border-width: 0;
+  font: inherit;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 6px;
+  padding: 2px 4px 2px 4px;
+  box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255,252,153, .3);
+  height: 23px;
+}
+
+.ki24_input input.kitext:focus {
+  box-shadow: 0px 0px 3px 1px rgba(0, 110, 180, 1);
+  outline: none;
+}
+
+span.ki24_input {
+  border-left: none;
+}
+
+
+.interaction.ic-text-correction.replace .input-text {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+
+.interaction.ic-text-correction.line .inputs div.checkbox {
+  display: inline;
+  position: absolute;
+}
+
+.interaction.ic-text-correction.line .inputs input[type=text] {
+  background:#fff;
+  border:none;
+  border-bottom:dotted 1px #999;
+  padding:2px 2px 2px 20px;
+  margin:0 1px;
+  font-size:14px;
+  color:#000;
+  -webkit-transition:all .5s;
+  -moz-transition:all .5s;
+  -o-transition:all .5s;
+  -ms-transition:all .5s;
+  transition:all .5s;
+  width: 88%;
+}
+
+.interaction.ic-text-correction.line .inputs input[type=text]:focus {
+  box-shadow:0px 0px 3px 1px #EF8827;
+  border-radius: 4px;
+  -webkit-transition:all 0.5s;
+  border-bottom:solid 0px rgba(0,110,180,1);
+}

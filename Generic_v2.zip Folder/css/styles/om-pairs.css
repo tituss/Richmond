@@ -1,0 +1,280 @@
+/* Added MLG 2012-07-26 #32 */
+.interaction.om-pairs .ddm_target_view {
+  display: table;
+}
+
+.interaction.om-pairs .wordpool {
+  float:none;
+  margin: 0;
+  margin-bottom: 12px;
+  background:#f5f5f5;
+  padding: 8px 4px 0 8px;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  z-index: 1000;
+}
+
+.interaction.om-pairs .wordpool.left {
+  float: left;
+  width: 208px;
+  margin-right: 10px;
+}
+.interaction.om-pairs .wordpool.left .drop_item_zone, .interaction.om-pairs .wordpool.right .drop_item_zone {
+  min-width: 208px;
+}
+.interaction.om-pairs .wordpool.right {
+  float: right;
+  width: 208px;
+  margin-left: 10px;
+}
+
+.interaction.om-pairs .wordpool.bottom {
+  margin-top: 12px;
+  clear: both;
+}
+
+.interaction.om-pairs .wordpool:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.interaction.om-pairs .ddm_wordpool_view .wordpool .drop_item_zone.has_drag_item {
+  width: auto !important;
+}
+
+.interaction.om-pairs .wordpool .drag_item{
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(249, 177, 52, 0.5);
+  border-radius: 5px;
+  padding: 0 5px;
+  z-index: 999;
+  text-align: center;
+}
+
+/*styling drag item - hover appearance in wordpool*/
+.interaction.om-pairs .wordpool .drag_item:hover{
+  cursor: pointer;
+  box-shadow:0 0 0 3px rgba(249, 177, 52, 0.5);
+}
+
+.interaction.package-editable.om-pairs .match_view.align_ontop .block .drop_area.is-active-target,
+.drop_indicator .interaction.package-editable.om-pairs .ddm_wordpool_view .drag_item.ui-draggable-dragging,
+.drop_indicator .interaction.package-editable.om-pairs .ddm_target_view .drag_item.ui-draggable-dragging {
+  box-shadow: 0 0 0 6px rgba(249, 177, 52, 0.5);
+  cursor: url("../images/drop_indicator_cursor.png") 12 12, auto;
+}
+
+/*styling drag item - default appearance in drop-zone*/
+.interaction.om-pairs .drop_zone .drag_item{
+  text-align:center;
+  margin: -4px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 1px rgba(249, 177, 52, 0.5);
+  color: rgb(68, 68, 68);
+  text-shadow: 0 1px 0 rgb(255, 255, 255);
+  padding: 4px 8px;
+}
+
+/*styling drag item - hover style when in a drop-zone but still able to move out*/
+.interaction.om-pairs .drop_zone .drag_item:hover{
+  box-shadow: 0px 0px 0px 3px rgba(249, 177, 52, 0.5);
+  cursor: pointer;
+}
+
+/*styling item holder when hovering over with a drag item - this style is for drop zones*/
+.interaction.om-pairs .drop_zone.hovered, .interaction.om-pairs .drop_zone .drop_item_zone.hovered{
+  box-shadow: 0 0 0 3px rgb(249, 177, 52);
+}
+
+/*Prefilled style*/
+.interaction.om-pairs .drop_zone .drag_item.prefilled, .interaction.om-pairs  .drop_zone .drag_item.prefilled:hover, #activity .drop_zone .drag_item.prefilled:active{
+  background: #eaf2f3;
+  -moz-box-shadow: 0 0 0 1px rgb(249, 177, 52);
+  -webkit-box-shadow: 0 0 0 1px rgb(249, 177, 52);
+  box-shadow: 0 0 0 1px rgb(249, 177, 52);
+  border-radius: 4px;
+  color: #3b595e;
+}
+
+/* drop zone */
+.interaction.om-pairs .drop_zone{
+  min-height: 50px;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+  padding:4px;
+  background:#fff;
+  margin: 0 20px 20px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow:inset 1px 1px 5px 0 rgba(0,0,0,0.35);
+  -moz-box-shadow:inset 1px 1px 5px 0 rgba(0,0,0,0.35);
+  box-shadow:1px 1px 5px 0 rgba(0,0,0,0.35);
+  position: relative;
+}
+
+/*dropzone default heading styles */
+.interaction.om-pairs .drop_zone h1{
+  font-size: 14px;
+  text-align:center;
+  padding:5px;
+  color:#444;
+  background: none;
+  margin:-4px -4px 8px -4px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  text-shadow: 0 1px 0 #fff;
+  cursor:default;
+  -webkit-box-shadow:0 -1px  1px 0 rgba(0,0,0,.2);
+  -moz-box-shadow:0 -1px  1px 0 rgba(0,0,0,.2);
+  box-shadow:0 -1px  1px 0 rgba(0,0,0,.2);
+}
+
+.interaction.om-pairs .ui-state-disabled, .interaction.om-pairs .ui-widget-content .ui-state-disabled, .interaction.om-pairs .ui-widget-header .ui-state-disabled {
+  opacity: 1;
+  filter:Alpha(Opacity=100);
+  background-image: none; }
+
+.interaction.om-pairs .enumanswer {
+  font-size: 1.3em;
+}
+
+/* added look for status-corrected state */
+
+.interaction.om-pairs.status-corrected:not(.status-input) .wordpool .drag_item:not(.prefilled):hover {
+  box-shadow: 0 0 0 1px rgba(249, 177, 52, 0.5);
+  cursor: default
+}
+
+.interaction.om-pairs.status-corrected:not(.status-input) .drop_zone .drag_item:not(.prefilled):hover {
+  box-shadow: 1px 1px 5px 0 rgba(249, 177, 52, 0.75);
+  cursor: default;
+}
+
+.interaction.om-pairs.status-corrected:not(.status-input) .ddm_target_view.horizontal .drop_zone {
+  width: auto !important;
+  clear: both;
+}
+
+/* optop specific css */
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone h1 {
+  box-shadow: none;
+  padding-bottom: 25px;
+}
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone .drag_item {
+  border-radius: 0 0 5px 5px;
+  margin-top: -25px;
+  font-size: 1.3em;
+}
+
+.interaction.om-pairs .ddm_target_view.ontop .enumanswer {
+  float: none;
+}
+
+/* h1 for horizontal and vertical */
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone h1, .interaction.om-pairs .ddm_target_view.vertical .drop_zone h1 {
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.35);
+  color: #444444;
+  padding: 5px 10px;
+  text-shadow: 0 1px 0 #fff;
+  font-weight: normal;
+}
+
+/* horizontal specific css */
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone {
+  width: 98.5% !important;
+  box-shadow: none;
+  margin: 0 0 10px 0;
+  min-height: 0;
+  float: left;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone.hovered {
+  box-shadow: 0 0 0 3px #fbc66b;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone h1 {
+  border-radius: 5px 0 0 5px;
+  text-align: right;
+  float: left;
+  margin-bottom: -4px;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .drop_zone .drag_item {
+  font-size: 14px;
+  float: left;
+  padding: 5px 10px;
+  margin-left: 12px;
+  border-radius: 0 5px 5px 0;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .enumanswer {
+  width: auto;
+  line-height: 23px;
+}
+
+.interaction.om-pairs .ddm_target_view.horizontal .enumanswer .enum-answers {
+  margin-right: 9px;
+}
+
+/* vertical specific css */
+.interaction.om-pairs .ddm_target_view.vertical .drop_zone {
+  min-width: 140px;
+  height: 150px;
+  box-shadow: none;
+  margin-bottom: 60px;
+}
+
+.interaction.om-pairs .ddm_target_view.vertical .drop_zone.hovered {
+  box-shadow: 0 0 0 3px rgb(249, 177, 52);
+}
+
+.interaction.om-pairs .ddm_target_view.vertical .drop_zone h1 {
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+}
+
+.interaction.om-pairs .ddm_target_view.vertical .drop_zone .drag_item {
+  font-size: 14px;
+  border-radius: 0 0 5px 5px;
+}
+
+/* check */
+.interaction.om-pairs .check {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  z-index: 999;
+}
+
+/*styling drag item - adds drop indicator (special cursor icon) when over an active drop-zone*/
+.interaction.om-pairs .wordpool .drag_item.ui-draggable-dragging,
+.interaction.om-pairs .ddm_target_view .drop_zone .drag_item.ui-draggable-dragging {
+  /*cursor: url(../../images/drop_indicator_cursor.png) 12 12, auto;*/
+  box-shadow: 0 0 0 3px rgba(249, 177, 52, 0.5), 1px 1px 2px 5px #c6c6c6;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* drop indicator */
+.drop_indicator .interaction.om-pairs .wordpool .drag_item.ui-draggable-dragging,
+.drop_indicator .interaction.om-pairs .ddm_target_view .drop_zone .drag_item.ui-draggable-dragging {
+  box-shadow:0 0 0 3px rgba(249, 177, 52, 0.5), 0 0 0 6px #c2e3f1;
+}

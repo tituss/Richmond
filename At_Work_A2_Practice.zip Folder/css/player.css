@@ -1,0 +1,400 @@
+/* VENDOR-TRANSFORM */
+
+/* Added CB 2012-08-03 #7 */
+.audio_media.audio_media3{
+  width:248px;
+}
+
+#activity .audio_wrapper3 .audio_header {
+  height: 5px;
+}
+
+#activity .audio_wrapper3 .video_footer {
+  height: 42px;
+  min-height: 0;
+}
+
+.audio_wrapper3 .progress_area {
+  margin-bottom: 4px;
+  height:10px;
+}
+
+.audio_wrapper3 .progress_downloaded{
+  height:100%;
+}
+
+.audio_wrapper3 .progress_played{
+  height:100%;
+}
+
+/* Added CB 2012-08-07 #7 */
+.audio_wrapper3 .progress_played:after, .audio_wrapper3 .progress_area:hover .progress_played:after{
+  content: "\00a0";
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: rgb(255,255,255);
+  float: right;
+  margin-top: 0;
+  margin-left:-3px;
+  border-radius: 0;
+  box-shadow: none;
+  margin-right: 0
+}
+
+.audio_wrapper3 .volume {
+  margin: 0 8px
+}
+
+/* Added CB 2012-08-03 #7 */
+.audio_wrapper3 .volume .mute_button {
+  height: 24px;
+  padding: 0 0 0 25px;
+}
+
+/* Added CB 2012-08-03 #7 - added to overwrite '#content_wrap ul' rule in player.css - would be better to remove the other rule or make it a bit more specific but I don't know what it's used for.*/
+#content_wrap ul.mute_button {
+  padding-left: 25px;
+}
+
+.audio_wrapper3 .timer {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset;
+  color: #ffffff;
+  font-size: 11px;
+  height: 17px;
+  line-height: 16px;
+  margin: 3px 0 0 2px;
+  padding: 1px 4px;
+}
+
+.audio_wrapper3 .timer:after, .audio_wrapper3 .timer:before {
+  content: '';
+  background: none;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+/* Updated CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .video_extras {
+  margin-top: 0;
+  margin-right: 7px;
+}
+
+/* Updated CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button, #activity #media .audio_wrapper3 .button_holder .transcript_button {
+  background: url("../img/icons/player_transcript.png") no-repeat top center;
+  height: 24px;
+  width: 20px;
+  margin: 0;
+  border: none;
+  color: transparent;
+  text-shadow: none;
+  display: block;
+  padding: 0px;
+}
+
+/* Added CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button:hover, #activity #media .audio_wrapper3 .button_holder .transcript_button:hover {
+  background-position: center center;
+}
+
+/* Added CB 2012-08-03 #7 */
+#activity #content_wrap .audio_wrapper3 .button_holder .transcript_button:active, #activity #media .audio_wrapper3 .button_holder .transcript_button:active {
+  background-position: bottom center;
+}
+
+/* Added CB 2012-08-03 #7 */
+.audio_wrapper3 .progress_area,
+.audio_wrapper3 .play,
+.audio_wrapper3 .pause,
+.audio_wrapper3 .mute_button,
+.audio_wrapper3 .transcript_button{
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* =========================================== ticks and crosses */
+
+.check.wrong,
+.check.correct,
+.check.wrong_2 {
+  position: absolute !important;
+  top: -4px;
+  right: -5px;
+  border: none !important;
+  box-shadow: none !important;
+  z-index: 1;
+  }
+
+
+.check.correct {
+    background: url('images/tick.png') no-repeat;
+    background-color: none !important;
+    background-position: 0 0 !important;
+}
+
+.check.wrong {
+  background: url('images/error.png') no-repeat;
+  background-color: none !important;
+  background-position: 0 0 !important;
+}
+
+.check.wrong_2 {
+  background: url('images/answer.png') no-repeat;
+  background-color: none !important;
+  background-position: 0 0 !important;
+}
+
+
+.interaction.om-pairs .drop_zone .check.wrong,
+.interaction.om-pairs .drop_zone .check.correct,
+.interaction.om-pairs .drop_zone .check.correct_2 {
+  display: inline-block;
+  margin-left: 6px;
+  position: relative;
+  right: auto;
+  top: auto;
+}
+
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone .check.wrong,
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone .check.correct,
+.interaction.om-pairs .ddm_target_view.ontop .drop_zone .check.correct_2 {
+	/*top: 5px;*/
+	top: -4px;
+	left: -9px;
+
+}
+
+
+.interaction.os-sorting .drop_zone .drag_item .check.wrong,
+.interaction.os-sorting .drop_zone .drag_item .check.correct, 
+.interaction.os-sorting .drop_zone .drag_item .check.correct_2 {
+  right: 5px !important;
+  top: 5px !important;
+}
+
+
+.choice_interaction .input-radio .check.wrong,
+.choice_interaction .input-radio .check.correct,
+.choice_interaction .input-radio .check.correct_2,
+.interaction.is-radiobutton .choice_interaction .check.wrong_2 {
+  right: -6px !important;
+  top: 7px !important;
+}
+
+
+.interaction.os-sequence .shuffle_interaction.horizontal .check.wrong,
+.interaction.os-sequence .shuffle_interaction.horizontal .check.correct,
+.interaction.os-sequence .shuffle_interaction.horizontal .check.correct_2 {
+  right: -12px;
+  top: 4px;
+  margin-top: 0;
+}
+  
+
+.interaction.os-sequence .shuffle_interaction .check.wrong,
+.interaction.os-sequence .shuffle_interaction .check.correct,  
+.interaction.os-sequence .shuffle_interaction .check.correct_2 {
+  left: -9px;
+  margin-top: -23px;
+  position: static;
+  right: auto;
+  top: auto;
+}
+
+.interaction.is-checkbox .choice_interaction .check.wrong,
+.interaction.is-checkbox .choice_interaction .check.correct,
+.interaction.is-checkbox .choice_interaction .check.correct_2 {
+  right: -9px;
+  top: 7px;
+}
+
+
+
+
+/* =========================================== toggle-text Save etc */
+
+div.contentblock .toggle-text {
+  
+    background: url('images/hide-reveal.png') no-repeat 95% center, linear-gradient(center top , #FFFFFF 0%, #F1F1F1 50%, #E1E1E1 51%, #F6F6F6 100%) repeat scroll 0 0 transparent !important;
+    border: 1px solid #ccc;;
+    border-radius: 5px 5px 5px 5px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 2px 0 0;
+    min-height: 21px;
+    padding: 0 30px 0 6px;
+    position: relative;
+    text-decoration: none;
+}
+
+div.contentblock .toggle-text:hover {
+    background: url('images/hide-reveal-over.png') no-repeat 95% center, linear-gradient(center top , #F6F6F6 0%, #E1E1E1 50%, #F1F1F1 51%, #FFFFFF 100%) repeat scroll 0 0 transparent !important;
+}
+
+
+
+.save-interaction {
+  background: url('images/save-disc.png') no-repeat 92% center, linear-gradient(center top , #FFFFFF 0%, #F1F1F1 50%, #E1E1E1 51%, #F6F6F6 100%) repeat scroll 0 0 transparent;
+  border: 1px solid #ccc;;
+  border-radius: 5px 5px 5px 5px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 2px 0 0;
+  min-height: 21px;
+  padding: 0 30px 0 6px;
+  position: relative;
+  text-decoration: none;
+}
+
+.save-interaction:hover {
+    background: url('images/save-disc.png') no-repeat 92% center, linear-gradient(center top , #F6F6F6 0%, #E1E1E1 50%, #F1F1F1 51%, #FFFFFF 100%) repeat scroll 0 0 transparent;
+}
+
+
+
+.choice_interaction .input-radio span, .choice_interaction .input-checkbox span {
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+.choice_interaction .input-radio span, .choice_interaction .input-checkbox span {
+  float: left; /* Fix alignment in Chrome */
+}
+
+
+
+
+
+
+
+
+
+.interaction.is-linking-lines .ll_view table {width: auto;}
+.interaction.is-linking-lines .ll_view table td.element div.ll_element_view {
+	width: 90%;
+	 margin-right: 50px;
+	}
+.interaction.is-linking-lines .ll_view table td.element div.ll_element_view.right {
+  padding-left: 30px;
+ 
+  }
+.interaction.is-linking-lines .ll_view .ll_element_view > .handle {
+  height: 12px; 
+  width: 12px; 
+  border-radius: 6px;
+  border:1px solid #d2d2d2;
+  background: none;
+  }
+
+.interaction.is-linking-lines .ll_view td:hover>.ll_element_view>.handle,
+.interaction.is-linking-lines .ll_view .ll_element_view > .handle-hover {
+	background: #dcdcdc;
+}
+
+
+
+
+
+.interaction.is-radiobutton .choice_interaction {
+	clear: none;
+	
+}
+
+
+
+
+
+
+
+
+div.lrp_wrap {float: right !important;}
+
+.lrp_listen, 
+.lrp_record, 
+.lrp_finish, 
+.lrp_play, 
+.lrp_listen.lrp_inactive:hover, 
+.lrp_record.lrp_inactive:hover, 
+.lrp_finish.lrp_inactive:hover, 
+.lrp_play.lrp_inactive:hover, 
+.lrp_listen.lrp_inactive:active, 
+.lrp_record.lrp_inactive:active, 
+.lrp_finish.lrp_inactive:active, 
+.lrp_play.lrp_inactive:active {
+	font-size: 0 !important;
+    height: 22px !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-left: 0 !important;
+    margin-bottom: 2px;
+} 
+
+.lrp_record:before, .lrp_record.lrp_inactive:hover:before, .lrp_record.lrp_inactive:active:before,
+.lrp_finish:before, .lrp_finish.lrp_inactive:hover:before, .lrp_finish.lrp_inactive:active:before,
+.lrp_play:before, .lrp_play.lrp_inactive:hover:before, .lrp_play.lrp_inactive:active:before {
+	border-right: 0 !important;
+	box-shadow: none !important;
+	border-radius: 5px !important;
+}
+
+.lrp_record:before, .lrp_record.lrp_inactive:hover:before, .lrp_record.lrp_inactive:active:before {
+	border-radius: 11px !important;
+	width: 22px !important;
+	background-position: -1px 0 !important;
+}
+
+#macro_controls a {min-width: 0 !important;}
+
+.v_a_media {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: auto !important;
+	height: auto !important;
+        margin-left: 0 !important;
+}
+
+.audio_media.audio_media3 {
+	width: auto !important;
+}
+
+
+.media.activity_media img {
+	position: relative !important;
+}
+
+
+
+
+.text-area-content input[type="text"] {
+         height: auto !important;
+         padding: 3px 5px 3px 5px;
+         vertical-align: middle;
+}
+
+
+
+
+
+
+.table-default td {border-right: 3px solid #fff;}

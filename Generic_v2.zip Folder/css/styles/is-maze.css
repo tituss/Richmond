@@ -1,0 +1,169 @@
+/* Maze (DIR2) */
+.dir2_view {
+  margin-right: 5px;
+  padding: 5px;padding-bottom:0px;
+}
+
+.dir2_view > span {
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.dir2_view.active {
+  background: #ecf5f8;
+  border: 1px solid #41c5f8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #41c5f8;
+}
+.dir2_view.active > span {
+  cursor: pointer;
+}
+.dir2_view div.back {
+  background: #000;
+  width: 60px;
+  height: 45px;
+}
+.dir2_view.answered > span {
+  cursor: normal;
+}
+.dir2_view > span > span.check  {
+  position: absolute;
+  margin-top: -52px;
+}
+.dir2_view .play {
+  padding: 0 10px;
+  margin-top: -10px;
+}
+
+.dir2_view .panel {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.dir2_view .panel .front {
+
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    text-align: center;
+
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    -webkit-transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+}
+
+
+.contentblock.dir2_view .front table { background-color: white; }
+
+.dir2_view .panel p{
+    font-weight: bold;
+    text-align: center;
+    color: #444;
+    text-shadow: 0 1px 0 white;
+    padding:0;
+}
+
+.dir2_view .panel .back {
+    
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    background: #DBF0F8;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.dir2_view .panel .back, .dir2_view .panel .front{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    border:5px solid #fff;
+}
+
+
+/* -- X axis rotation for click panel -- */
+.dir2_view .click .front {
+    cursor: pointer;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+.dir2_view .click.flip .front ,.dir2_view .click.paired .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.dir2_view .click .back {
+    cursor: pointer;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+}
+.dir2_view .click.flip .back, .dir2_view .click.paired .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+}
+
+.dir2_view .panel .front:hover, .dir2_view .panel .back:hover {
+    -moz-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.75);
+    box-shadow: 0 0 7px rgba(0,0,0,0.75);
+}
+.dir2_view .panel.paired .back, .dir2_view .panel.paired .front{
+    border:5px solid #cce3bb;
+    background:#dceecf;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0);
+    box-shadow: 0 0 5px rgba(0,0,0,0);
+    cursor:default;
+}
+
+.dir2_view .panel.notpaired .back{
+    border:5px solid #c90202;
+}
+
